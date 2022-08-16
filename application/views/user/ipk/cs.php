@@ -214,7 +214,7 @@
 </div>
 
 <!-- form lampiran -->
-<div class="">
+<div class="row">
     <ul>
         <div class="card shadow mb-4">
             <div class="card-header py-3">
