@@ -250,3 +250,22 @@
         </div>
     </ul>
 </div>
+<div class="container ml-2 mb-5">
+    <div class="d-sm-flex align-items-center justify-content-between">
+        <button href="#" type="submit" class="btn btn-secondary btn-icon-split">
+            <span class="icon text-white-50">
+                <i class="fas fa-arrow-right"></i>
+            </span>
+            <span class="text">Back</span>
+        </button>
+    </div>
+    <div class="mt-2">
+        <button href="#" type="submit" class="btn btn-success btn-icon-split">
+            <span class="icon text-white-50">
+                <i class="fas fa-check"></i>
+            </span>
+            <span class="text">Approve</span>
+        </button>
+
+    </div>
+</div>
