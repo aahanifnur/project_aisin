@@ -114,6 +114,6 @@ class Auth extends CI_Controller
 
     // public function index()
     // {
-    //     $this->load->view('user/profile');
+    //     $this->load->view('auth/nlogin');
     // }
 }

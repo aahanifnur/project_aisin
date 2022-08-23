@@ -30,7 +30,7 @@
                             <tr>
                                 <td>No Registrasi </td>
                                 <td>: </td>
-                                <td><input type="text" name="" id="" /></td>
+                                <td><input type="text" name="" id="" disabled /></td>
                             </tr>
                             <tr>
                                 <td>Nama Kontraktor </td>
@@ -108,7 +108,7 @@
                                     </thead>
                                     <tfoot>
                                         <tr class="text-center">
-                                            <td><br /></td>
+                                            <td><br /><button class="btn btn-primary">hai</button></td>
                                             <td><br /></td>
                                             <td><br /></td>
                                             <td><br /></td>
@@ -252,7 +252,7 @@
 </div>
 <div class="container ml-2 mb-5">
     <div class="d-sm-flex align-items-center justify-content-between">
-        <button href="#" type="submit" class="btn btn-secondary btn-icon-split">
+        <button href="#" type="submit" onclick="history.back()" class="btn btn-secondary btn-icon-split">
             <span class="icon text-white-50">
                 <i class="fas fa-arrow-right"></i>
             </span>
@@ -260,6 +260,7 @@
         </button>
     </div>
     <div class="mt-2">
+
         <button href="#" type="submit" class="btn btn-success btn-icon-split">
             <span class="icon text-white-50">
                 <i class="fas fa-check"></i>
@@ -268,4 +269,5 @@
         </button>
 
     </div>
+
 </div>

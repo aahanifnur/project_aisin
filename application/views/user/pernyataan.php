@@ -103,7 +103,7 @@
     </div>
 </div>
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <button href="#" type="submit" class="btn btn-secondary btn-icon-split">
+    <button href="#" onclick="history.back()" class="btn btn-secondary btn-icon-split">
         <span class="icon text-white-50">
             <i class="fas fa-arrow-right"></i>
         </span>

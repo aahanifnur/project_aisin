@@ -12,9 +12,18 @@ class User extends CI_Controller
         // $data['data'] = $this->db->get('sim-a')->result();
         // $data['content'] = 'user/index';
         $this->load->view('templates/header', $data);
-        $this->load->view('templates/topbar', $data);
+        // $this->load->view('templates/topbar', $data);
         $this->load->view('user/index', $data);
-        $this->load->view('templates/footer');
+        // $this->load->view('templates/footer');
+    }
+
+    public function high_place_work()
+    {
+        $data['title'] = 'Home';
+        $data['user'] = $this->db->get_where('user', ['email' =>
+        $this->session->userdata('email')])->row_array();
+        $this->load->view('templates/header', $data);
+        $this->load->view('user/ipk/high_place_work', $data);
     }
 
     public function hpw()
@@ -24,6 +33,7 @@ class User extends CI_Controller
         $this->session->userdata('email')])->row_array();
         $this->load->view('templates/header', $data);
         $this->load->view('templates/topbar', $data);
+        $this->load->view('templates/sidebar', $data);
         $this->load->view('user/ipk/hpw', $data);
         $this->load->view('templates/footer');
     }
@@ -100,6 +110,7 @@ class User extends CI_Controller
         $data['user'] = $this->db->get_where('user', ['email' =>
         $this->session->userdata('email')])->row_array();
         $this->load->view('templates/header', $data);
+        // $this->load->view('templates/sidebar', $data);
         $this->load->view('templates/topbar', $data);
         $this->load->view('user/catatan_pekerjaan_khusus', $data);
         $this->load->view('templates/footer');
