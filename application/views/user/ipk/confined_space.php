@@ -93,7 +93,7 @@
                 <!-- Container Fluid-->
                 <div class="container-fluid" id="container-wrapper">
                     <div class="col-xl-12 col-lg-7 mb-4 d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h4 mb-0 text-gray-800">High Place Work</h1>
+                        <h1 class="h4 mb-0 text-gray-800">Approval</h1>
                         <!-- <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="./">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
@@ -116,7 +116,7 @@
                                 <div class="card-body">
                                     <div class="row align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-center text-xs font-weight-bold text-uppercase mb-1">Kontraktor</div>
+                                            <div class="text-center text-xs font-weight-bold text-uppercase mb-1">Safety</div>
                                             <hr>
 
                                             <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-success">Delivered</span></div>
@@ -126,32 +126,7 @@
 
 
 
-                                                <span class="h6 text-gray-800">Purwoko</span>
-                                            </div>
-                                        </div>
-                                        <!-- <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-primary"></i>
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-md-6 mb-4">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-center text-xs font-weight-bold text-uppercase mb-1">MGR User</div>
-                                            <hr>
-
-                                            <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-success">Delivered</span></div>
-                                            <hr>
-                                            <div class="text-center mt-2 mb-0 text-muted text-xs">
-                                                <!-- <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span> -->
-
-
-
-                                                <span class="h6 text-gray-800">Gangsar</span>
+                                                <span class="h6 text-gray-800">Glen Maxinino</span>
                                             </div>
                                         </div>
                                         <!-- <div class="col-auto">
@@ -167,7 +142,7 @@
                                 <div class="card-body">
                                     <div class="row align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-center text-xs font-weight-bold text-uppercase mb-1">MGR Area</div>
+                                            <div class="text-center text-xs font-weight-bold text-uppercase mb-1">Safety</div>
                                             <hr>
 
                                             <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-success">Delivered</span></div>
@@ -177,7 +152,7 @@
 
 
 
-                                                <span class="h6 text-gray-800">Janto</span>
+                                                <span class="h6 text-gray-800">Glen Maxinino</span>
                                             </div>
                                         </div>
                                         <!-- <div class="col-auto">
@@ -201,7 +176,7 @@
                                                 <!-- <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span> -->
 
 
-                                                <span class="h6 text-gray-800">Anton</span>
+                                                <span class="h6 text-gray-800">Glen Maxinino</span>
                                             </div>
                                         </div>
                                         <!-- <div class="col-auto">
@@ -216,7 +191,7 @@
                                 <div class="card-body">
                                     <div class="row align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-center text-xs font-weight-bold text-uppercase mb-1">P2K3L</div>
+                                            <div class="text-center text-xs font-weight-bold text-uppercase mb-1">Safety</div>
                                             <hr>
 
                                             <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-success">Delivered</span></div>
@@ -226,7 +201,7 @@
 
 
 
-                                                <span class="h6 text-gray-800">Gangsar</span>
+                                                <span class="h6 text-gray-800">Glen Maxinino</span>
                                             </div>
                                         </div>
                                         <!-- <div class="col-auto">
@@ -241,7 +216,7 @@
                                 <div class="card-body">
                                     <div class="row align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-center text-xs font-weight-bold text-uppercase mb-1">GM</div>
+                                            <div class="text-center text-xs font-weight-bold text-uppercase mb-1">Safety</div>
                                             <hr>
 
                                             <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-success">Delivered</span></div>
@@ -250,7 +225,7 @@
                                                 <!-- <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span> -->
 
 
-                                                <span class="h6 text-gray-800">Arif</span>
+                                                <span class="h6 text-gray-800">Glen Maxinino</span>
                                             </div>
                                         </div>
                                         <!-- <div class="col-auto">
@@ -260,34 +235,22 @@
                                 </div>
                             </div>
                         </div><!-- Earnings (Monthly) Card Example -->
-
-
-
-                        <div class="col-xl-12 col-lg-7 mb-4 d-sm-flex align-items-center justify-content-between ml-3 mb-4">
-                            <h4 class="h4 mb-0 text-gray-800">Perpanjangan</h4>
-                            <!-- <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="./">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
-                        </ol> -->
-                        </div>
-
                         <div class="col-xl-2 col-md-6 mb-4">
-
                             <div class="card h-100">
                                 <div class="card-body">
                                     <div class="row align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-center text-xs font-weight-bold text-uppercase mb-1">Safety/P2K3L</div>
+                                            <div class="text-center text-xs font-weight-bold text-uppercase mb-1">Safety</div>
                                             <hr>
 
-                                            <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-warning">None</span></div>
+                                            <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-success">Delivered</span></div>
                                             <hr>
                                             <div class="text-center mt-2 mb-0 text-muted text-xs">
                                                 <!-- <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span> -->
 
 
 
-                                                <span class="h6 text-gray-800">Anton</span>
+                                                <span class="h6 text-gray-800">Glen Maxinino</span>
                                             </div>
                                         </div>
                                         <!-- <div class="col-auto">
@@ -308,134 +271,60 @@
                         </ol> -->
                         </div>
 
-                        <div class="col-xl-6 col-lg-7 mb-4">
-                            <div class="card">
-                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary"></h6>
-                                    <a class="m-0 float-right btn btn-danger btn-sm" href="<?= base_url('user/form_adm'); ?>">Isi Form <i class="fas fa-chevron-right"></i></a>
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table align-items-center table-flush">
-                                        <tbody>
-                                            <tr>
-                                                <td><a>No Register</a></td>
-                                                <td>:</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td><a>Nama Kontraktor</a></td>
-                                                <td>:</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td><a>Nama Pekerjaan</a></td>
-                                                <td>:</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td><a>Lokasi Pekerjaan</a></td>
-                                                <td>:</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td><a>Tanggal Bekerja</a></td>
-                                                <td>:</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td><a>Perpanjangan</a></td>
-                                                <td>:</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="card-footer"></div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-12 col-lg-7 mb-4 d-sm-flex align-items-center justify-content-between ml-3 mb-4">
-                            <h1 class="h4 mb-0 text-gray-800">Form IPK</h1>
-                            <!-- <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="./">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
-                        </ol> -->
-                        </div>
-
                         <!-- Invoice Example -->
                         <div class="col-xl-12 col-lg-7 mb-4">
                             <div class="card">
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary"></h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Invoice</h6>
                                     <a class="m-0 float-right btn btn-danger btn-sm" href="<?= base_url('user/form'); ?>">Isi Form <i class="fas fa-chevron-right"></i></a>
                                 </div>
                                 <div class="table-responsive">
-                                    <table class="table align-items-center table-flush" id="">
+                                    <table class="table align-items-center table-flush">
                                         <thead class="thead-light">
-                                            <tr class="text-center">
-                                                <th rowspan="2">No</th>
-                                                <th rowspan="2">Nama Pekerja</th>
-                                                <th rowspan="2">Training HPW</th>
-                                                <th rowspan="2">ID Card</th>
-                                                <th colspan="2">APD yang Digunakan</th>
-                                                <th colspan="2">Pemantauan Alat Bantu Kerja</th>
-                                                <th colspan="2">Peralatan Kerja</th>
-                                                <th colspan="3">Sumber Daya yang Digunakan</th>
-                                                <th colspan="3">Pengawasan oleh PT AISIN INDONESIA</th>
-                                            </tr>
-                                            <tr class="text-center">
-                                                <th>Nama</th>
-                                                <th>Jumlah</th>
-                                                <th>Nama</th>
-                                                <th>Kondisi</th>
-                                                <th>Nama</th>
-                                                <th>Jumlah</th>
-                                                <th>Listrik</th>
-                                                <th>Angin</th>
-                                                <th>Air</th>
-                                                <th>User</th>
-                                                <th>P2K3L</th>
-                                                <th>Safety</th>
+                                            <tr>
+                                                <th>Order ID</th>
+                                                <th>Customer</th>
+                                                <th>Item</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-
+                                            <tr>
+                                                <td><a href="#">RA0449</a></td>
+                                                <td>Udin Wayang</td>
+                                                <td>Nasi Padang</td>
+                                                <td><span class="badge badge-success">Delivered</span></td>
+                                                <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">RA5324</a></td>
+                                                <td>Jaenab Bajigur</td>
+                                                <td>Gundam 90' Edition</td>
+                                                <td><span class="badge badge-warning">Shipping</span></td>
+                                                <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">RA8568</a></td>
+                                                <td>Rivat Mahesa</td>
+                                                <td>Oblong T-Shirt</td>
+                                                <td><span class="badge badge-danger">Pending</span></td>
+                                                <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">RA1453</a></td>
+                                                <td>Indri Junanda</td>
+                                                <td>Hat Rounded</td>
+                                                <td><span class="badge badge-info">Processing</span></td>
+                                                <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">RA1998</a></td>
+                                                <td>Udin Cilok</td>
+                                                <td>Baby Powder</td>
+                                                <td><span class="badge badge-success">Delivered</span></td>
+                                                <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -445,11 +334,19 @@
 
                         <div class="col-xl-12 col-lg-7 mb-4 d-sm-flex align-items-center justify-content-between ml-3 mb-4">
                             <h1 class="h4 mb-0 text-gray-800">Lampiran</h1>
+                            <!-- <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="./">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                        </ol> -->
                         </div>
 
                         <!-- Invoice Example -->
                         <div class="col-xl-6 col-lg-7 mb-4">
                             <div class="card">
+                                <!-- <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Invoice</h6>
+                                    <a class="m-0 float-right btn btn-danger btn-sm" href="#">View More <i class="fas fa-chevron-right"></i></a>
+                                </div> -->
                                 <div class="table-responsive">
                                     <table class="table align-items-center table-flush">
                                         <thead class="thead-light">
@@ -461,27 +358,27 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><a>Pernyataaan Sosialisasi Kebijakan LK3 & Peraturan</a></td>
+                                                <td><a href="#">Pernyataaan Sosialisasi Kebijakan LK3 & Peraturan</a></td>
                                                 <td><span class="badge badge-success">Delivered</span></td>
                                                 <td><a href="<?= base_url('user/pernyataan'); ?>" class="btn btn-sm btn-primary">Detail</a></td>
                                             </tr>
                                             <tr>
-                                                <td><a>Identifikasi Aspek dan Dampak LK3</a></td>
+                                                <td><a href="#">Identifikasi Aspek dan Dampak LK3</a></td>
                                                 <td><span class="badge badge-warning">Shipping</span></td>
                                                 <td><a href="<?= base_url('user/identifikasi_aspek'); ?>" class="btn btn-sm btn-primary">Detail</a></td>
                                             </tr>
                                             <tr>
-                                                <td><a>Check List Aktivitas Pra-kerja</a></td>
+                                                <td><a href="#">Check List Aktivitas Pra-kerja</a></td>
                                                 <td><span class="badge badge-danger">Pending</span></td>
                                                 <td><a href="<?= base_url('user/check_list_activitas'); ?>" class="btn btn-sm btn-primary">Detail</a></td>
                                             </tr>
                                             <tr>
-                                                <td><a>Lisensi K3 CS</a></td>
+                                                <td><a href="#">Lisensi K3 CS</a></td>
                                                 <td><span class="badge badge-info">Processing</span></td>
                                                 <td><a href="<?= base_url('user/upload_file'); ?>" class="btn btn-sm btn-primary">Detail</a></td>
                                             </tr>
                                             <tr>
-                                                <td><a>Catatan Pekerjaan Khusus</a></td>
+                                                <td><a href="#">Catatan Pekerjaan Khusus</a></td>
                                                 <td><span class="badge badge-success">Delivered</span></td>
                                                 <td><a href="<?= base_url('user/catatan_pekerjaan_khusus'); ?>" class="btn btn-sm btn-primary">Detail</a></td>
                                             </tr>

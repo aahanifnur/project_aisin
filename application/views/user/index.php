@@ -305,11 +305,10 @@
                                 Buat IPK
                             </button>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="<?= base_url('user/hpw'); ?>">High Place Work</a>
-                                <a class="dropdown-item" href="<?= base_url('user/hw'); ?>">Hot Work</a>
-                                <a class="dropdown-item" href="<?= base_url('user/cs'); ?>">Confined Space</a>
-                                <a class="dropdown-item" href="<?= base_url('user/g'); ?>">General</a>
-                                <a class="dropdown-item" href="<?= base_url('user/high_place_work'); ?>">Coba</a>
+                                <a class="dropdown-item" href="<?= base_url('user/high_place_work'); ?>">High Place Work</a>
+                                <a class="dropdown-item" href="<?= base_url('user/hot_work'); ?>">Hot Work</a>
+                                <a class="dropdown-item" href="<?= base_url('user/confined_space'); ?>">Confined Space</a>
+                                <a class="dropdown-item" href="<?= base_url('user/general'); ?>">General</a>
                             </div>
                         </div>
                     </div>

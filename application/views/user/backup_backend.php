@@ -45,6 +45,31 @@
                         </tr>
                     <?php } ?>
                 </tbody>
+                <!-- hehehe -->
+                <tbody>
+                    <?php foreach ($data as $value) { ?>
+                        <tr class="text-center">
+                            <td><?php echo $value->id; ?></td>
+                            <td><?php echo $value->nama; ?></td>
+                            <td><?php echo $value->jumlah; ?></td>
+                            <td><?php echo $value->nama; ?></td>
+                            <td><?php echo $value->kondisi; ?></td>
+                            <td><?php echo $value->nama; ?></td>
+                            <td><?php echo $value->jumlah; ?></td>
+                            <td><?php echo $value->listrik; ?></td>
+                            <td><?php echo $value->angin; ?></td>
+                            <td><?php echo $value->air; ?></td>
+                            <td><?php echo $value->user; ?></td>
+                            <td><?php echo $value->p2k3l; ?></td>
+                            <td><?php echo $value->safety; ?></td>
+                            <td>
+                            <td><?php echo $value->tipe; ?></td>
+                            <a href="" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i></a>
+                            <a href="" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
+                            </td>
+                        </tr>
+                    <?php } ?>
+                </tbody>
             </table>
         </div>
     </div>
