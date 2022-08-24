@@ -44,9 +44,21 @@
                     <tr>
                         <td class="text-center">1.1</td>
                         <td> Apakah kontraktor sudah memahami mekanisme kerja kontraktor?</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td class="text-center">
+                            <div class="radio">
+                                <label><input type="radio" id='regular' name="optradio"></label>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="radio">
+                                <label><input type="radio" id='regular' name="optradio"></label>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="radio">
+                                <label><input type="radio" id='regular' name="optradio"></label>
+                            </div>
+                        </td>
                         <td></td>
                     </tr>
                     <tr>

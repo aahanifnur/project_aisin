@@ -1,5 +1,7 @@
 <!-- DataTales Example -->
-<div class="card shadow mb-4">
+
+
+<div class="col-xl-12 col-lg-7 mb-4">
     <div class="card-header py-3">
         <div class="container">
             <center>
@@ -8,10 +10,14 @@
             </center>
         </div>
     </div>
-    <div class="card-body">
+    <div class="card">
+        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+            <h6 class="m-0 font-weight-bold text-primary"></h6>
+            <a class="m-0 float-right btn btn-danger btn-sm" href="<?= base_url('user/form_jsa'); ?>">Isi Form <i class="fas fa-chevron-right"></i></a>
+        </div>
         <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                <thead>
+            <table class="table align-items-center table-flush" id="">
+                <thead class="thead-light">
                     <tr>
                         <th>
                             <center>NO</center>
@@ -34,18 +40,13 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td class="text-center">1</td>
-                        <td>contoh</td>
-                        <td>contoh</td>
-                        <td>contoh</td>
-                        <td>contoh</td>
-                        <td>contoh</td>
-                    </tr>
+
                 </tbody>
             </table>
         </div>
+        <div class="card-footer"></div>
     </div>
 </div>
+
 
 </div>

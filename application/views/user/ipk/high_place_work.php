@@ -473,7 +473,7 @@
                                             <tr>
                                                 <td><a>Check List Aktivitas Pra-kerja</a></td>
                                                 <td><span class="badge badge-danger">Pending</span></td>
-                                                <td><a href="<?= base_url('user/check_list_activitas'); ?>" class="btn btn-sm btn-primary">Detail</a></td>
+                                                <td><a href="<?= base_url('user/check_list_aktivitas'); ?>" class="btn btn-sm btn-primary">Detail</a></td>
                                             </tr>
                                             <tr>
                                                 <td><a>Lisensi K3 CS</a></td>

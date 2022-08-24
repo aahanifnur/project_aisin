@@ -129,6 +129,22 @@
                                         <td>1. </td>
                                         <td>Masuk Lingkungan PT.AISIN INDONESIA, Tamu harus melalui Pos security dan Wajib menyerahkan Identitas KTP,SIM,Kartu identitas karyawan dan Jumlah pekerja yang bertugas di PT.AISIN INDONESIA kepada Kepala regu /Chicf Security
                                         </td>
+                                        <td>
+                                            <div class="radio">
+                                                <label><input type="radio" id='regular' name="optradio"></label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="radio">
+                                                <label><input type="radio" id='regular' name="optradio"></label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="radio">
+                                                <label><input type="radio" id='regular' name="optradio"></label>
+                                            </div>
+                                        </td>
+                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td>2. </td>
