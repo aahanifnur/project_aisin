@@ -3,6 +3,14 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class User extends CI_Controller
 {
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->model('User_m');
+
+        is_logged_in();
+    }
+
     public function index()
     {
         $data['title'] = 'Home';
@@ -19,6 +27,9 @@ class User extends CI_Controller
 
     public function high_place_work()
     {
+        $data['result'] = $this->User_m->index_ipk();
+        $data['result1'] = $this->User_m->administrasi();
+
         $data['title'] = 'Home';
         $data['user'] = $this->db->get_where('user', ['email' =>
         $this->session->userdata('email')])->row_array();
@@ -89,7 +100,12 @@ class User extends CI_Controller
 
     public function identifikasi_aspek()
     {
-        $data['title'] = 'Home';
+        $data['result'] = $this->User_m->SemuaData();
+        // $this->load->view('user/identifikasi_aspek', $data);
+
+        // log_message('id', $data['identifikasi_aspek']);
+        // $data['title'] = 'Home';
+        // $data['identifikasi_aspek'] = $this->User_m->SemuaData();
         $data['user'] = $this->db->get_where('user', ['email' =>
         $this->session->userdata('email')])->row_array();
         $this->load->view('templates/header', $data);
@@ -124,6 +140,7 @@ class User extends CI_Controller
 
     public function form_jsa()
     {
+
         $data['title'] = 'Home';
         $data['user'] = $this->db->get_where('user', ['email' =>
         $this->session->userdata('email')])->row_array();
@@ -131,7 +148,36 @@ class User extends CI_Controller
         // $this->load->view('templates/sidebar', $data);
         // $this->load->view('templates/topbar', $data);
         $this->load->view('user/form_jsa', $data);
-        // $this->load->view('templates/footer');
+        // $this->load->view('templates/footer');        
+    }
+
+    public function simpanData()
+    {
+        $this->User_m->inputData();
+        redirect('user/jsa');
+    }
+
+    public function form_jsa_edit($id)
+    {
+        $data['title'] = 'Home';
+        $data['user'] = $this->db->get_where('user', ['email' =>
+        $this->session->userdata('email')])->row_array();
+        $this->load->view('templates/header', $data);
+
+        $data['identifikasi_aspek'] = $this->User_m->getUserById($id);
+        $this->load->view('user/form_jsa_edit', $data);
+    }
+
+    public function form_jsa_hapus($id)
+    {
+        $this->User_m->hapusData($id);
+        redirect('user/jsa');
+    }
+
+    public function ubahData()
+    {
+        $this->User_m->updateData();
+        redirect('user/jsa');
     }
 
     public function form()
@@ -156,5 +202,40 @@ class User extends CI_Controller
         // $this->load->view('templates/topbar', $data);
         $this->load->view('user/upload_file', $data);
         // $this->load->view('templates/footer');
+    }
+
+    public function form_wizard2()
+    {
+        $data['title'] = 'Home';
+        $data['user'] = $this->db->get_where('user', ['email' =>
+        $this->session->userdata('email')])->row_array();
+        $this->load->view('templates/header', $data);
+        // $this->load->view('templates/sidebar', $data);
+        // $this->load->view('templates/topbar', $data);
+        $this->load->view('user/form_wizard2', $data);
+        // $this->load->view('templates/footer');
+    }
+
+    public function jsa()
+    {
+        $data['result'] = $this->User_m->SemuaData();
+
+        $data['title'] = 'Home';
+        $data['user'] = $this->db->get_where('user', ['email' =>
+        $this->session->userdata('email')])->row_array();
+        $this->load->view('templates/header', $data);
+        // $this->load->view('templates/sidebar', $data);
+        // $this->load->view('templates/topbar', $data);
+        $this->load->view('user/lampiran/identifikasi_aspek', $data);
+        // $this->load->view('templates/footer');
+    }
+
+    // add or remove input
+    public function store()
+    {
+        if (!empty($this->input->post('submit'))) {
+            echo "<pre>";
+            print_r($_POST);
+        }
     }
 }

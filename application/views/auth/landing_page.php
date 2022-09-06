@@ -25,8 +25,7 @@
                 <img width="150" height="30" src="<?= base_url('assets/'); ?>img/logo2.png" alt="">
             </a>
             <div>
-                <a class="btn btn-primary" href="#signup">Login</a>
-                <a class="btn btn-primary" href="#signup">Registration</a>
+                <a class="btn btn-primary" href="<?= base_url('auth/login1/'); ?>">Login</a>
             </div>
 
         </div>

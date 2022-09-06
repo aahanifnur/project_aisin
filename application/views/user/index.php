@@ -40,13 +40,11 @@
                 </a>
                 <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Bootstrap UI</h6>
-                        <a class="collapse-item" href="alerts.html">Alerts</a>
-                        <a class="collapse-item" href="buttons.html">Buttons</a>
-                        <a class="collapse-item" href="dropdowns.html">Dropdowns</a>
-                        <a class="collapse-item" href="modals.html">Modals</a>
-                        <a class="collapse-item" href="popovers.html">Popovers</a>
-                        <a class="collapse-item" href="progress-bar.html">Progress Bars</a>
+                        <h6 class="collapse-header">Izin Pekerjaan Khusus</h6>
+                        <a class="collapse-item" href="alerts.html">High Place Work</a>
+                        <a class="collapse-item" href="alerts.html">Confined Space</a>
+                        <a class="collapse-item" href="buttons.html">Hot Work</a>
+                        <a class="collapse-item" href="dropdowns.html">General</a>
                     </div>
                 </div>
             </li>
@@ -143,81 +141,26 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td><a href="#">RA0449</a></td>
-                                            <td>Udin Wayang</td>
-                                            <td>Nasi Padang</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td><span class="badge badge-success">Delivered</span></td>
-                                            <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">RA5324</a></td>
-                                            <td>Jaenab Bajigur</td>
-                                            <td>Gundam 90' Edition</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td><span class="badge badge-warning">Shipping</span></td>
-                                            <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">RA8568</a></td>
-                                            <td>Rivat Mahesa</td>
-                                            <td>Oblong T-Shirt</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td><span class="badge badge-danger">Pending</span></td>
-                                            <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">RA1453</a></td>
-                                            <td>Indri Junanda</td>
-                                            <td>Hat Rounded</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td><span class="badge badge-info">Processing</span></td>
-                                            <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">RA1998</a></td>
-                                            <td>Udin Cilok</td>
-                                            <td>Baby Powder</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td><span class="badge badge-success">Delivered</span></td>
-                                            <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
-                                        </tr>
+
+                                        <?php $no = 1;
+                                        foreach ($result as $data) :
+                                        ?>
+                                            <tr>
+                                                <td><?php echo $no++; ?></td>
+                                                <td><?php echo $data['no_registrasi']; ?></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span class="badge badge-success">Delivered</span></td>
+                                                <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
+                                            </tr>
+                                        <?php endforeach ?>
                                     </tbody>
                                 </table>
                             </div>
@@ -254,6 +197,9 @@
                                 <a class="dropdown-item" href="<?= base_url('user/hot_work'); ?>">Hot Work</a>
                                 <a class="dropdown-item" href="<?= base_url('user/confined_space'); ?>">Confined Space</a>
                                 <a class="dropdown-item" href="<?= base_url('user/general'); ?>">General</a>
+                                <a class="dropdown-item" href="<?= base_url('user/form_wizard2'); ?>">test wizard</a>
+                                <a class="dropdown-item" href="<?= base_url('user/jsa'); ?>">test jsa</a>
+                                <a class="dropdown-item" href="<?= base_url('user/nlogin'); ?>">test login baru</a>
                             </div>
                         </div>
                     </div>
@@ -264,7 +210,7 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabelLogout">Ohh No!</h5>
+                                    <h5 class="modal-title" id="exampleModalLabelLogout">Are you sure?</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>

@@ -18,7 +18,7 @@
     <div id="wrapper">
         <!-- Sidebar -->
         <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= base_url('user/index'); ?>">
                 <div class="sidebar-brand-icon">
                     <img width="100px" height="90px" src="<?= base_url('assets/'); ?>img/logo/aisin.png">
                 </div>
@@ -92,7 +92,7 @@
 
                 <!-- Container Fluid-->
                 <div class="container-fluid" id="container-wrapper">
-                    <div class="col-xl-12 col-lg-7 mb-4 d-sm-flex align-items-center justify-content-between mb-4">
+                    <div class="col-xl-12 col-lg-7 d-sm-flex align-items-center justify-content-between">
                         <h1 class="h4 mb-0 text-gray-800"></h1>
                         <!-- <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="./">Home</a></li>
@@ -109,128 +109,92 @@
                         </ol>
                     </div>
 
-                    <div class="row mb-3">
-                        <!-- Earnings (Monthly) Card Example -->
-                        <!-- DataTales Example -->
-                        <div class="card shadow mb-4">
+                    <div class="row mb-1">
+                        <div class="col-xl-12 col-lg-7">
                             <div class="card-header py-3">
                                 <div class="container">
                                     <center>
-                                        <h4 class="m-0 font-weight-bold text-primary">PERNYATAAN</h4>
-
-                                        <h6 class="m-0 font-weight- text-primary">Sosialisasi Kebijakan LK3 & Peraturan Bagi Kontraktor/Suplier</h6>
-                                        <h6 class="m-0 font-weight- text-primary">Selama Berada di Area PT. AISIN INDONESIA</h6>
+                                        <h4 class="m-0 font-weight-bold text-dark">IDENTIFIIKASI ASPEK DAN DAMPAK LK3</h4>
+                                        <h4 class="m-0 font-weight-bold text-dark">UNTUK PEKERJAAN KONTRAKTOR</h4>
                                     </center>
                                 </div>
                             </div>
-                            <div class="card-body">
-                                <table>
-                                    <tr>
-                                        <td>1. </td>
-                                        <td>Masuk Lingkungan PT.AISIN INDONESIA, Tamu harus melalui Pos security dan Wajib menyerahkan Identitas KTP,SIM,Kartu identitas karyawan dan Jumlah pekerja yang bertugas di PT.AISIN INDONESIA kepada Kepala regu /Chicf Security
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>2. </td>
-                                        <td>
-                                            Setiap masuk / keluar Tamu harus melalui pos security melapor membawa barang dan membaca kartu protokol keselamatan tamu yang berisi Kebijakan LK3 PT. AISIN INDONESIA & Panduan Tamu apabila terjadi keadaan darurat yang telah disediakan di pos security.
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>3. </td>
-                                        <td>
-                                            Bila masuk ke Pabrik wajib memperlihatkan form Visitor Plant kepada Security dipintu masuk, Form Visitor yang di setujui ditanda tangani Oleh Group Manager atau DIREKTUR PT.AISIN INDONESIA
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>4. </td>
-                                        <td>
-                                            Wajib menggunakan APD yang sesuai dan menaati tat tertib perusahaan
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>5. </td>
-                                        <td>
-                                            Setiap pulang /keluar dari komplek PT. Aisin Indonesia tunjukkan barang yg di bawa sertakan dokumennya dan menukar kartu Visitor dengan mengambil identitasnya masing-masing.
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>6. </td>
-                                        <td>
-                                            Khusus Kontraktor wajib memperlihatkan kepada Security Foto Copy izin Pekerjaan Khusus ( IPK ) yang sudah di Registrasi oleh P2K3L ( Section Safety ) dan dilampirkan Bukti Sosialisasi safety sebagai Syarat sudah mendapatkan pengarahan tentang safety untuk melakukan pekerjaan di PT.AISIN INDONESIA
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>7. </td>
-                                        <td>
-                                            Selama pekerjaan berlangsung karyawan kontraktor harus menggunakan seragam dan rompi Lengkap dengan Alat Pelindung Diri ( APD ) harus disediakan dan ada nama IDENTITAS Kontraktor '
-                                            Apabila kontraktor menggunakan helm dan Rompi harus type beda dengan yang digunakan oleh karyawan PT. Aisin Indonesia.'
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>6. </td>
-                                        <td>
-                                            Wajib menjaga ketertiban & keamanan di dalam lingkungan PT. Aisin Indonesia agar membatasi area kerja serta dipasang Police line / barekade safety line
+                            <div class="card mb-4">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary"></h6>
+                                    <a class="m-0 float-right btn btn-danger btn-sm" href="<?= base_url('user/form_jsa'); ?>">Tambah Data <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table align-items-center table-flush" id="">
+                                        <thead class="thead-light">
+                                            <tr>
+                                                <th>
+                                                    <center>NO</center>
+                                                </th>
+                                                <th>
+                                                    <center>URUTAN PROSES / KEGIATAN</center>
+                                                </th>
+                                                <th>
+                                                    <center>POTENSI BAHAYA / DAMPAK YANG MUNGKIN TIMBUL</center>
+                                                </th>
+                                                <th>
+                                                    <center>K3 / L</center>
+                                                </th>
+                                                <th>
+                                                    <center>TINDAKAN PENCEGAHAN YG HARUS DILAKUKAN</center>
+                                                </th>
+                                                <th>
+                                                    <center>KETERANGAN</center>
+                                                </th>
+                                                <th>
+                                                    <center>ACTION</center>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php
+                                            $no = 1;
+                                            // printf($result);
+                                            foreach ($result as $jsa) : ?>
+                                                <tr>
+                                                    <td class="text-center"><?php echo $no++; ?></td>
+                                                    <td><?php echo $jsa['urutan_proses'] ?></td>
+                                                    <td><?php echo $jsa['potensi_bahaya'] ?></td>
+                                                    <td class="text-center"><?php echo $jsa['k3l'] ?></td>
+                                                    <td><?php echo $jsa['tindakan_pencegahan'] ?></td>
+                                                    <td><?php echo $jsa['keterangan'] ?></td>
+                                                    <td width="140">
+                                                        <a href="<?= base_url('user/form_jsa_edit/'); ?><?= $jsa['id'] ?>" class="m-0 float-right btn btn-primary btn-sm mr-2"><i class="fas fa-edit"></i></a>
 
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>7. </td>
-                                        <td>
-                                            Wajib untuk segera memberitahukan kepada User apabila terjadi keadaan darurat (Kebakaran, Ledakan, kebocoran Bahan Kimia, Banjir, Huru hara, dll) dan mematuhi petunjuk-petunjuk evakuasi dan petugas keadaan darurat PT Aisin Indonesia demi keselamatan karyawan
+                                                        <a href="<?= base_url('user/form_jsa_hapus/'); ?><?= $jsa['id'] ?>" class="m-0 float-right btn btn-danger btn-sm mr-2"><i class="fas fa-trash"></i></a>
 
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>8. </td>
-                                        <td>
-                                            Selama bekerja diwajibkan Kepala proyek / pimpinan lapangan yang di tunjuk Selalu ada di Lokasi untuk mengawasi kondisi Area bila suatu waktu dibutuhkan Oleh user , sebelum meninggalkan area kerja harus melakukan menjaga kebersihan membuang sampah pada tempatnya
+                                                    </td>
+                                                </tr>
+                                            <?php endforeach;
+                                            ?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="card-footer"></div>
+                            </div>
+                            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                                <button onclick="history.back()" class="btn btn-secondary btn-icon-split">
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span>
+                                    <span class="text">Back</span>
+                                </button>
+                                <button href="#" type="submit" class="btn btn-success btn-icon-split ml-2">
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    <span class="text">Approve</span>
+                                </button>
 
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>9. </td>
-                                        <td>
-                                            Apabila dalam melaksanakan pekerjaannya ditemukan pelanggaran terhadap aturan safety (Standard kerja, APD, dll ) dilakukan Stop-Call-Wait dan Bila tidak diLengkapi,pekerjaan tidak dapat di lanjutkan
-
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>10. </td>
-                                        <td>
-                                            Dilarang Keras Merokok dan Membuang Sampah ( Barang Bekas ) Bentuk apapun disembarang tempat Tanpa sepengetahuan USER bila terjadi Pelanggaran maka akan di kenakan Sangsi sesuai Peraturan Perusahaan PT.AISIN INDONESIA
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-
-                                        </td>
-                                        <td>
-                                            <p>
-                                                <br />Dengan ini saya membaca Kebijakan LK3 dan menyatakan telah menerima dan memahami seluruh isi dari peraturan pekerjaan kontraktor di PT.Aisin Indonesia
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </table>
                             </div>
                         </div>
 
-                        <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                            <button onclick="history.back()" class="btn btn-secondary btn-icon-split">
-                                <span class="icon text-white-50">
-                                    <i class="fas fa-arrow-right"></i>
-                                </span>
-                                <span class="text">Back</span>
-                            </button>
-                            <button href="#" type="submit" class="btn btn-success btn-icon-split ml-2">
-                                <span class="icon text-white-50">
-                                    <i class="fas fa-check"></i>
-                                </span>
-                                <span class="text">Approve</span>
-                            </button>
 
-                        </div>
                     </div>
                     <!--Row-->
 

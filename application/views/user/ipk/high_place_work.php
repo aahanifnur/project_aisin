@@ -119,7 +119,7 @@
                                             <div class="text-center text-xs font-weight-bold text-uppercase mb-1">Kontraktor</div>
                                             <hr>
 
-                                            <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-success">Delivered</span></div>
+                                            <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-success">Approved</span></div>
                                             <hr>
                                             <div class="text-center mt-2 mb-0 text-muted text-xs">
                                                 <!-- <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span> -->
@@ -144,7 +144,7 @@
                                             <div class="text-center text-xs font-weight-bold text-uppercase mb-1">MGR User</div>
                                             <hr>
 
-                                            <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-success">Delivered</span></div>
+                                            <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-warning">Pending</span></div>
                                             <hr>
                                             <div class="text-center mt-2 mb-0 text-muted text-xs">
                                                 <!-- <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span> -->
@@ -170,7 +170,7 @@
                                             <div class="text-center text-xs font-weight-bold text-uppercase mb-1">MGR Area</div>
                                             <hr>
 
-                                            <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-success">Delivered</span></div>
+                                            <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-warning">Pending</span></div>
                                             <hr>
                                             <div class="text-center mt-2 mb-0 text-muted text-xs">
                                                 <!-- <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span> -->
@@ -195,7 +195,7 @@
                                             <div class="text-center text-xs font-weight-bold text-uppercase mb-1">Safety</div>
                                             <hr>
 
-                                            <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-success">Delivered</span></div>
+                                            <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-warning">Pending</span></div>
                                             <hr>
                                             <div class="text-center mt-2 mb-0 text-muted text-xs">
                                                 <!-- <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span> -->
@@ -219,7 +219,7 @@
                                             <div class="text-center text-xs font-weight-bold text-uppercase mb-1">P2K3L</div>
                                             <hr>
 
-                                            <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-success">Delivered</span></div>
+                                            <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-warning">Pending</span></div>
                                             <hr>
                                             <div class="text-center mt-2 mb-0 text-muted text-xs">
                                                 <!-- <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span> -->
@@ -244,7 +244,7 @@
                                             <div class="text-center text-xs font-weight-bold text-uppercase mb-1">GM</div>
                                             <hr>
 
-                                            <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-success">Delivered</span></div>
+                                            <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-warning">Pending</span></div>
                                             <hr>
                                             <div class="text-center mt-2 mb-0 text-muted text-xs">
                                                 <!-- <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span> -->
@@ -280,7 +280,7 @@
                                             <div class="text-center text-xs font-weight-bold text-uppercase mb-1">Safety/P2K3L</div>
                                             <hr>
 
-                                            <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-warning">None</span></div>
+                                            <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-none">None</span></div>
                                             <hr>
                                             <div class="text-center mt-2 mb-0 text-muted text-xs">
                                                 <!-- <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span> -->
@@ -300,89 +300,66 @@
 
                         </div>
 
-                        <div class="col-xl-12 col-lg-7 mb-4 d-sm-flex align-items-center justify-content-between ml-3 mb-4">
-                            <h1 class="h4 mb-0 text-gray-800">Administration</h1>
-                            <!-- <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="./">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
-                        </ol> -->
+                        <div class="col-xl-10 col-lg-7 mb-4">
                         </div>
-
                         <div class="col-xl-6 col-lg-7 mb-4">
                             <div class="card">
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary"></h6>
-                                    <a class="m-0 float-right btn btn-danger btn-sm" href="<?= base_url('user/form_adm'); ?>">Isi Form <i class="fas fa-chevron-right"></i></a>
+                                    <h1 class="h4 mb-0 text-gray-800">Form IPK</h1>
+                                    <a class="m-0 float-left btn btn-danger btn-sm" href="<?= base_url('user/form_adm'); ?>">Isi Form <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-10 col-lg-7">
+                        </div>
+                        <div class="col-xl-6 col-lg-7 mb-4">
+                            <div class="card">
+                                <div class="card-header py-2.75 d-flex flex-row align-items-center justify-content-between">
                                 </div>
                                 <div class="table-responsive">
                                     <table class="table align-items-center table-flush">
                                         <tbody>
-                                            <tr>
-                                                <td><a>No Register</a></td>
-                                                <td>:</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td><a>Nama Kontraktor</a></td>
-                                                <td>:</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td><a>Nama Pekerjaan</a></td>
-                                                <td>:</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td><a>Lokasi Pekerjaan</a></td>
-                                                <td>:</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td><a>Tanggal Bekerja</a></td>
-                                                <td>:</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td><a>Perpanjangan</a></td>
-                                                <td>:</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
+                                            <?php
+                                            // printf($result);
+                                            foreach ($result1 as $data) : ?>
+                                                <tr>
+                                                    <td>No Register</td>
+                                                    <td>:</td>
+                                                    <td><?php echo $data['no_registrasi'] ?></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nama Kontraktor</td>
+                                                    <td>:</td>
+                                                    <td><?php echo $data['nama_kontraktor'] ?></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nama Pekerjaan</td>
+                                                    <td>:</td>
+                                                    <td><?php echo $data['nama_pekerjaan'] ?></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lokasi Pekerjaan</td>
+                                                    <td>:</td>
+                                                    <td><?php echo $data['lokasi_pekerjaan'] ?></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tanggal Bekerja</td>
+                                                    <td>:</td>
+                                                    <td><?php echo $data['tanggal_bekerja'] ?></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Perpanjangan</td>
+                                                    <td>:</td>
+                                                    <td><?php echo $data['perpanjangan'] ?></td>
+                                                    <td></td>
+                                                </tr>
+                                            <?php endforeach ?>
                                         </tbody>
                                     </table>
                                 </div>
@@ -390,20 +367,19 @@
                             </div>
                         </div>
 
-                        <div class="col-xl-12 col-lg-7 mb-4 d-sm-flex align-items-center justify-content-between ml-3 mb-4">
-                            <h1 class="h4 mb-0 text-gray-800">Form IPK</h1>
-                            <!-- <ol class="breadcrumb">
+                        <!-- <div class="col-xl-12 col-lg-7 mb-4 d-sm-flex align-items-center justify-content-between ml-3 mb-4">
+                            <h1 class="h4 mb-0 text-gray-800">Form IPK</h1> -->
+                        <!-- <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="./">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
                         </ol> -->
-                        </div>
+                        <!-- </div> -->
 
                         <!-- Invoice Example -->
                         <div class="col-xl-12 col-lg-7 mb-4">
                             <div class="card">
-                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <div class="card-header py-2.75 d-flex flex-row align-items-center justify-content-between">
                                     <h6 class="m-0 font-weight-bold text-primary"></h6>
-                                    <a class="m-0 float-right btn btn-danger btn-sm" href="<?= base_url('user/form'); ?>">Isi Form <i class="fas fa-chevron-right"></i></a>
                                 </div>
                                 <div class="table-responsive">
                                     <table class="table align-items-center table-flush" id="">
@@ -435,7 +411,35 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-
+                                            <?php
+                                            $no = 1;
+                                            // printf($result);
+                                            foreach ($result as $data) : ?>
+                                                <tr>
+                                                    <td class="text-center"><?php echo $no++; ?></td>
+                                                    <td><?php echo $data['nama_pekerja'] ?></td>
+                                                    <td><?php echo $data['training'] ?></td>
+                                                    <td><?php echo $data['id_card'] ?></td>
+                                                    <!-- apd -->
+                                                    <td><?php echo $data['nama_apd'] ?></td>
+                                                    <td><?php echo $data['jumlah_apd'] ?></td>
+                                                    <!-- pemantauan -->
+                                                    <td><?php echo $data['nama_pemantauan'] ?></td>
+                                                    <td><?php echo $data['kondisi_pemantauan'] ?></td>
+                                                    <!-- peralatan -->
+                                                    <td><?php echo $data['nama_peralatan'] ?></td>
+                                                    <td><?php echo $data['jumlah_peralatan'] ?></td>
+                                                    <!-- sumber daya -->
+                                                    <td><?php echo $data['listrik'] ?></td>
+                                                    <td><?php echo $data['angin'] ?></td>
+                                                    <td><?php echo $data['air'] ?></td>
+                                                    <!-- pengawasan -->
+                                                    <td><?php echo $data['user'] ?></td>
+                                                    <td><?php echo $data['p2k3l'] ?></td>
+                                                    <td><?php echo $data['safety'] ?></td>
+                                                </tr>
+                                            <?php endforeach;
+                                            ?>
                                         </tbody>
                                     </table>
                                 </div>
@@ -450,6 +454,8 @@
                         <!-- Invoice Example -->
                         <div class="col-xl-6 col-lg-7 mb-4">
                             <div class="card">
+                                <div class="card-header py-2.75 d-flex flex-row align-items-center justify-content-between">
+                                </div>
                                 <div class="table-responsive">
                                     <table class="table align-items-center table-flush">
                                         <thead class="thead-light">
@@ -468,7 +474,7 @@
                                             <tr>
                                                 <td><a>Identifikasi Aspek dan Dampak LK3</a></td>
                                                 <td><span class="badge badge-warning">Shipping</span></td>
-                                                <td><a href="<?= base_url('user/identifikasi_aspek'); ?>" class="btn btn-sm btn-primary">Detail</a></td>
+                                                <td><a href="<?= base_url('user/jsa'); ?>" class="btn btn-sm btn-primary">Detail</a></td>
                                             </tr>
                                             <tr>
                                                 <td><a>Check List Aktivitas Pra-kerja</a></td>

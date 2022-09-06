@@ -12,8 +12,8 @@ class Admin extends CI_Controller
         // $data['data'] = $this->db->get('sim-a')->result();
         // $data['content'] = 'user/index';
         $this->load->view('templates/header', $data);
-        $this->load->view('templates/topbar', $data);
+        // $this->load->view('templates/topbar', $data);
         $this->load->view('admin/index', $data);
-        $this->load->view('templates/footer');
+        // $this->load->view('templates/footer');
     }
 }

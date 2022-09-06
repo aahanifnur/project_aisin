@@ -24,12 +24,11 @@
         <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon">
-                    <img src="img/logo/logo2.png">
+                    <img width="100px" height="90px" src="<?= base_url('assets/'); ?>img/logo/aisin.png">
                 </div>
-                <div class="sidebar-brand-text mx-3">RuangAdmin</div>
             </a>
             <hr class="sidebar-divider my-0">
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
@@ -41,7 +40,7 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap" aria-expanded="true" aria-controls="collapseBootstrap">
                     <i class="far fa-fw fa-window-maximize"></i>
-                    <span>Bootstrap UI</span>
+                    <span>Menu</span>
                 </a>
                 <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
@@ -55,65 +54,10 @@
                     </div>
                 </div>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm" aria-expanded="true" aria-controls="collapseForm">
-                    <i class="fab fa-fw fa-wpforms"></i>
-                    <span>Forms</span>
-                </a>
-                <div id="collapseForm" class="collapse show" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Forms</h6>
-                        <a class="collapse-item  active" href="form_basics.html">Form Basics</a>
-                        <a class="collapse-item" href="form_advanceds.html">Form Advanceds</a>
-                    </div>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTable" aria-expanded="true" aria-controls="collapseTable">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span>
-                </a>
-                <div id="collapseTable" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Tables</h6>
-                        <a class="collapse-item" href="simple-tables.html">Simple Tables</a>
-                        <a class="collapse-item" href="datatables.html">DataTables</a>
-                    </div>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="ui-colors.html">
-                    <i class="fas fa-fw fa-palette"></i>
-                    <span>UI Colors</span>
-                </a>
-            </li>
+
+
             <hr class="sidebar-divider">
-            <div class="sidebar-heading">
-                Examples
-            </div>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePage" aria-expanded="true" aria-controls="collapsePage">
-                    <i class="fas fa-fw fa-columns"></i>
-                    <span>Pages</span>
-                </a>
-                <div id="collapsePage" class="collapse" aria-labelledby="headingPage" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Example Pages</h6>
-                        <a class="collapse-item" href="login.html">Login</a>
-                        <a class="collapse-item" href="register.html">Register</a>
-                        <a class="collapse-item" href="404.html">404 Page</a>
-                        <a class="collapse-item" href="blank.html">Blank Page</a>
-                    </div>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span>
-                </a>
-            </li>
-            <hr class="sidebar-divider">
-            <div class="version" id="version-ruangadmin"></div>
+            <div class="version" id="">Version 1.1 2022</div>
         </ul>
         <!-- Sidebar -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -158,8 +102,8 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-lg-12">
-                            <!-- Form Basic -->
+                        <div class="col-lg-6">
+                            <!-- Administrasi -->
                             <div class="card mb-3">
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 class="m-0 font-weight-bold text-primary">Administration</h6>
@@ -206,10 +150,170 @@
                                             <label>CP Mandor</label>
                                             <input type="email" class="form-control mb-3" id="noreg" aria-describedby="emailHelp">
                                         </div>
-                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
                                     </form>
                                 </div>
                             </div>
+
+                            <!-- Nama Pekerja -->
+                            <div class="card mb-3">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Nama Pekerja</h6>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label>Nama Pekerja</label>
+                                            <input type="email" class="form-control mb-2" id="noreg" aria-describedby="emailHelp">
+                                            <label>ID Card</label>
+                                            <select class="form-control mb-2" id="exampleFormControlSelect1" aria-placeholder="jumlah">
+                                                <option>Ada</option>
+                                                <option>Tidak</option>
+                                            </select>
+                                            <label>Training HPW</label>
+                                            <select class="form-control mb-2" id="exampleFormControlSelect1" aria-placeholder="jumlah">
+                                                <option>Ada</option>
+                                                <option>Tidak</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" name="add" id="add" class="btn btn-success add-more">
+                                            Add More
+                                        </button>
+                                        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- alat keselamatan -->
+                            <div class="card mb-3">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Alat Keselamatan Kerja</h6>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label>Nama AKK / APD</label>
+                                            <input type="email" class="form-control mb-2" id="noreg" aria-describedby="emailHelp">
+                                            <input type="number" class="form-control mb-2" id="noreg" aria-describedby="emailHelp">
+
+                                        </div>
+
+                                        <button type="button" name="add" id="add" class="btn btn-success add-more">
+                                            Add More
+                                        </button>
+
+                                        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-6">
+                            <!-- General Element -->
+                            <div class="card mb-3">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Pemantauan Alat kerja</h6>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label>Nama AKK / APD</label>
+                                            <input type="email" class="form-control mb-2" id="noreg" aria-describedby="emailHelp">
+                                            <select class="form-control" id="exampleFormControlSelect1" aria-placeholder="jumlah">
+                                                <option>OK</option>
+                                                <option>NG</option>
+                                            </select>
+                                        </div>
+
+                                        <button type="button" name="add" id="add" class="btn btn-success add-more">
+                                            Add More
+                                        </button>
+
+                                        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="card mb-3">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Alat yang Digunakan</h6>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label>Nama AKK / APD</label>
+                                            <input type="email" class="form-control mb-2" id="noreg" aria-describedby="emailHelp">
+                                            <select class="form-control" id="exampleFormControlSelect1" aria-placeholder="jumlah">
+                                                <option>OK</option>
+                                                <option>NG</option>
+                                            </select>
+                                        </div>
+
+                                        <button type="button" name="add" id="add" class="btn btn-success add-more">
+                                            Add More
+                                        </button>
+
+                                        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- percobaan more add input -->
+                            <div class="card mb-3">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Sumber Daya yang Digunakan</h6>
+                                </div>
+                                <div id="show_item">
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label>Nama AKK / APD</label>
+                                                <input name="nama" type="text" class="form-control mb-2" id="nama" aria-describedby="">
+                                                <select class="form-control" id="akk_apd_s" aria-placeholder="kondis">
+                                                    <option>OK</option>
+                                                    <option>NG</option>
+                                                </select>
+                                            </div>
+
+                                            <button type="button" name="add" id="add" class="btn btn-success add_item_btn">
+                                                Add More
+                                            </button>
+
+                                            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Pengawasan Oleh PT AISIN Indonesia</h6>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label>User</label>
+                                            <input type="email" class="form-control mb-2" id="noreg" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Safety Officer</label>
+                                            <input type="email" class="form-control mb-2" id="noreg" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>P2K3L</label>
+                                            <input type="email" class="form-control mb-2" id="noreg" aria-describedby="emailHelp">
+                                        </div>
+
+                                        <!-- <button type="button" name="add" id="add" class="btn btn-success add-more">
+                                            Add More
+                                        </button> -->
+
+                                        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                     </div>
                     <!--Row-->
@@ -245,7 +349,7 @@
                         <span>copyright &copy; <script>
                                 document.write(new Date().getFullYear());
                             </script> - developed by
-                            <b><a href="https://indrijunanda.gitlab.io/" target="_blank">indrijunanda</a></b>
+                            <b><a href="https://indrijunanda.gitlab.io/" target="_blank">ahmad</a></b>
                         </span>
                     </div>
                 </div>
@@ -259,15 +363,7 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-    <script>
-        $('#touchSpin1').TouchSpin({
-            min: 0,
-            max: 100,
-            boostat: 5,
-            maxboostedstep: 10,
-            initval: 0
-        });
-    </script>
+
 
     <script src="<?= base_url('assets/'); ?>vendor/jquery/jquery.min.js"></script>
     <script src="<?= base_url('assets/'); ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -276,5 +372,74 @@
     <script src="<?= base_url('assets/'); ?>js/ruang-admin.min.js"></script>
 
 </body>
+
+<!-- script add or remove input -->
+<!-- <script type="text/javascript">
+    $(document).ready(function() {
+        var i = 1;
+
+        $('#add').click(function() {
+            i++;
+            $('#dynamic_field').append('<div id="row' + i + '"><div class="form-group"><label class="control-label col-sm-2" for="name">Name:</label><div class="col-sm-5"><input type="text" class="form-control"  placeholder="Enter Name" name="name[]" autocomplete="off"></div></div><div class="form-group"><label class="control-label col-sm-2" for="email">Email:</label><div class="col-sm-5"><input type="email" class="form-control" id="email" placeholder="Enter email" name="email[]" autocomplete="off"></div></div><div class="form-group"><label class="control-label col-sm-2" for="mobno">Mobile Number:</label><div class="col-sm-5"><input type="number" class="form-control" id="mobno" placeholder="Enter Mobile Number" name="mobno[]" autocomplete="off"></div><button type="button" name="remove" id="' + i + '" class="btn btn-danger btn_remove">X</button></div></div></div>');
+        });
+
+        $(document).on('click', '.btn_remove', function() {
+            var button_id = $(this).attr("id");
+            var res = confirm('Are You Sure You Want To Delete This?');
+            if (res == true) {
+                $('#row' + button_id + '').remove();
+                $('#' + button_id + '').remove();
+            }
+        });
+
+    });
+</script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".add_item_btn").click(function(e) {
+            e.preventDefault();
+            $("#show_item").prepend(`
+            <div class="card-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label>Nama AKK / APD</label>
+                                            <input name="nama" type="text" class="form-control mb-2" id="nama" aria-describedby="">
+                                            <select class="form-control" id="akk_apd_s" aria-placeholder="">
+                                                <option>OK</option>
+                                                <option>NG</option>
+                                            </select>
+                                        </div>
+
+                                        <button type="button" name="remove" id="remove" class="btn btn-danger remove_item_btn">
+                                            Remove
+                                        </button>                                   
+                                    </form>
+                                </div>
+                                `)
+        });
+        $(document).on('click', '.remove_item_btn', function(e) {
+            e.preventDefault();
+            let row_item = $(this).parent().parent();
+            $(row_item).remove();
+        });
+
+
+        // pending................................................... iki nggo insert data ng db
+        // ajax request to insert all form data --- pending ndisik ya
+        // $("#add_form").submit(function(e) {
+        //     e.preventDefault();
+        //     $("#add_btn").val('Adding...');
+        //     $.ajax({
+        //         url: 'action.php',
+        //         method: 'post',
+        //         data: $(this).serialize(),
+        //         success: function(response) {
+        //             console.log(response);
+        //         }
+        //     })
+        // })
+    });
+</script>
 
 </html>

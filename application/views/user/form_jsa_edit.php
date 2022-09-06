@@ -69,11 +69,15 @@
                     </button>
                     <ul class="navbar-nav ml-auto">
                         <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-white small"><?= $user['name']; ?></span>
                                 <img class="img-profile rounded-circle" src="<?= base_url('assets/img/profile/') .  $user['image']; ?>">
                             </a>
+
+                            <!-- dropdown user information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -109,30 +113,32 @@
                                     <h6 class="m-0 font-weight-bold text-primary">Administration</h6>
                                 </div>
                                 <div class="card-body">
-                                    <form action="<?= base_url('User/simpanData'); ?>" method="POST">
+                                    <form action="<?= base_url('user/ubahData'); ?>" method="POST">
+                                        <input type="hidden" name="id" value="<?= $identifikasi_aspek['id'] ?>">
                                         <div class="form-group">
                                             <label>Urutan Proses / Kegiatan</label>
-                                            <textarea id="urutanProses" name="urutanProses" class="form-control" rows="3"></textarea>
+                                            <textarea id="urutanProses" name="urutanProses" class="form-control" rows="3"><?= $identifikasi_aspek['urutan_proses'] ?></textarea>
                                         </div>
                                         <div class="form-group">
                                             <label>Potensi Bahaya / Dampak yang Memungkinkakn Timbul</label>
-                                            <textarea name="potensiBahaya" id="potensiBahaya" class="form-control" rows="3"></textarea>
+                                            <textarea name="potensiBahaya" id="potensiBahaya" class="form-control" rows="3"><?= $identifikasi_aspek['potensi_bahaya'] ?></textarea>
 
                                         </div>
+                                        <!-- blom bisa kerecord -->
                                         <div class="form-group">
                                             <label>K3 / L</label>
-                                            <select class="form-control mb-2" name="jenis" id="jenis">
+                                            <select class="form-control mb-2" name="jenis" id="jenis"><?= $identifikasi_aspek['k3l'] ?>
                                                 <option value="K3">K3</option>
                                                 <option value="L">L</option>
                                             </select>
                                         </div>
                                         <div class="form-group">
                                             <label>Tindakan Pencegahan yang harus Dilakukan</label>
-                                            <textarea name="tindakanPencegahan" id="tindakanPencegahan" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            <textarea name="tindakanPencegahan" id="tindakanPencegahan" class="form-control" rows="3"><?= $identifikasi_aspek['tindakan_pencegahan'] ?></textarea>
                                         </div>
                                         <div class="form-group">
                                             <label>Keterangan</label>
-                                            <textarea name="keterangan" class="form-control" id="keterangan" rows="3"></textarea>
+                                            <textarea name="keterangan" class="form-control" id="keterangan" rows="3"><?= $identifikasi_aspek['keterangan'] ?></textarea>
                                         </div>
                                         <button type="submit" class="btn btn-primary">Submit</button>
                                     </form>
@@ -186,16 +192,6 @@
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
-
-    <script>
-        $('#touchSpin1').TouchSpin({
-            min: 0,
-            max: 100,
-            boostat: 5,
-            maxboostedstep: 10,
-            initval: 0
-        });
-    </script>
 
     <script src="<?= base_url('assets/'); ?>vendor/jquery/jquery.min.js"></script>
     <script src="<?= base_url('assets/'); ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
