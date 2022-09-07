@@ -59,4 +59,9 @@ class User_m extends CI_Model
     {
         return $this->db->get('administrasi')->result_array();
     }
+
+    public function dashboard()
+    {
+        return $this->db->get('administrasi')->result_array();
+    }
 }
