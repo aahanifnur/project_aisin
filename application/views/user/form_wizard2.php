@@ -94,43 +94,40 @@
                 <!-- Topbar -->
 
                 <div class="container-fluid" id="container-wrapper">
-                    <div class="card container mb-4">
-                        <div class="row">
+                    <div class="card container mb-4 mt-5">
+                        <div class="container">
                             <div class="col-md-12 col-md-offset-1">
                                 <form action="" method="post" class="f1">
                                     <br />
                                     <h3>FORM IPK</h3>
                                     <p>Pastikan anda mengisinya dngan benar.</p>
-                                    <div style="overflow-x:auto ;">
-                                        <div class="f1-steps">
-                                            <div class="f1-progress">
-                                                <div class="f1-progress-line" data-now-value="25" data-number-of-steps="7" style="width: 25%;"></div>
-                                            </div>
-                                            <div class="f1-step active">
-                                                <div class="f1-step-icon"><i class="fa fa-user"></i></div>
-                                                <p>Biodata</p>
-                                            </div>
-                                            <div class="f1-step">
-                                                <div class="f1-step-icon"><i class="fa fa-home"></i></div>
-                                                <p>Alamat</p>
-                                            </div>
-                                            <div class="f1-step">
-                                                <div class="f1-step-icon"><i class="fa fa-key"></i></div>
-                                                <p>Akun</p>
-                                            </div>
-                                            <div class="f1-step">
-                                                <div class="f1-step-icon"><i class="fa fa-address-book"></i></div>
-                                                <p>Sosial</p>
-                                            </div>
-                                            <div class="f1-step">
-                                                <div class="f1-step-icon"><i class="fa fa-address-book"></i></div>
-                                                <p>Hanif</p>
-                                            </div>
+                                    <div class="f1-steps">
+                                        <div class="f1-progress">
+                                            <div class="f1-progress-line" data-now-value="25" data-number-of-steps="4" style="width: 25%;"></div>
+                                        </div>
+                                        <div class="f1-step active">
+                                            <div class="f1-step-icon"><i class="fa fa-user"></i></div>
+                                            <p>Biodata</p>
+                                        </div>
+                                        <div class="f1-step">
+                                            <div class="f1-step-icon"><i class="fa fa-home"></i></div>
+                                            <p>Alamat</p>
+                                        </div>
+                                        <div class="f1-step">
+                                            <div class="f1-step-icon"><i class="fa fa-key"></i></div>
+                                            <p>Akun</p>
+                                        </div>
+
+                                        <div class="f1-step">
+                                            <div class="f1-step-icon"><i class="fa fa-address-book"></i></div>
+                                            <p>Sosial</p>
                                         </div>
                                     </div>
                                     <!-- step 1 -->
+                                    <br>
+                                    <br>
                                     <fieldset>
-                                        <h4>Identitas Pribadi</h4>
+                                        <h4 class="text-primary">Identitas Pribadi</h4>
                                         <div class="form-group">
                                             <label>Nama Awal</label>
                                             <input type="text" name="nama_awal" placeholder="Nama Awal" class="form-control">

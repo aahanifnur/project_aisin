@@ -199,7 +199,8 @@
                                 <a class="dropdown-item" href="<?= base_url('user/general'); ?>">General</a>
                                 <a class="dropdown-item" href="<?= base_url('user/form_wizard2'); ?>">test wizard</a>
                                 <a class="dropdown-item" href="<?= base_url('user/jsa'); ?>">test jsa</a>
-                                <a class="dropdown-item" href="<?= base_url('user/nlogin'); ?>">test login baru</a>
+                                <a class="dropdown-item" href="<?= base_url('user/test_modal'); ?>">modal</a>
+                                <a class="dropdown-item" href="<?= base_url('user/form_multistep'); ?>">test multistep</a>
                             </div>
                         </div>
                     </div>

@@ -216,6 +216,30 @@ class User extends CI_Controller
         // $this->load->view('templates/footer');
     }
 
+    public function form_multistep()
+    {
+        $data['title'] = 'Home';
+        $data['user'] = $this->db->get_where('user', ['email' =>
+        $this->session->userdata('email')])->row_array();
+        // $this->load->view('templates/header', $data);
+        // $this->load->view('templates/sidebar', $data);
+        // $this->load->view('templates/topbar', $data);
+        $this->load->view('user/form_wizard_allinone', $data);
+        // $this->load->view('templates/footer');
+    }
+
+    public function test_modal()
+    {
+        $data['title'] = 'Home';
+        $data['user'] = $this->db->get_where('user', ['email' =>
+        $this->session->userdata('email')])->row_array();
+        // $this->load->view('templates/header', $data);
+        // $this->load->view('templates/sidebar', $data);
+        // $this->load->view('templates/topbar', $data);
+        $this->load->view('user/form_modal_wizard', $data);
+        // $this->load->view('templates/footer');
+    }
+
     public function jsa()
     {
         $data['result'] = $this->User_m->SemuaData();

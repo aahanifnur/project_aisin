@@ -170,7 +170,7 @@
                                             <div class="text-center text-xs font-weight-bold text-uppercase mb-1">MGR Area</div>
                                             <hr>
 
-                                            <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-warning">Pending</span></div>
+                                            <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-success">Pending</span></div>
                                             <hr>
                                             <div class="text-center mt-2 mb-0 text-muted text-xs">
                                                 <!-- <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span> -->
@@ -244,7 +244,7 @@
                                             <div class="text-center text-xs font-weight-bold text-uppercase mb-1">GM</div>
                                             <hr>
 
-                                            <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-warning">Pending</span></div>
+                                            <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-success">Pending</span></div>
                                             <hr>
                                             <div class="text-center mt-2 mb-0 text-muted text-xs">
                                                 <!-- <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span> -->
