@@ -29,7 +29,7 @@ class Auth extends CI_Controller
 
     private function _login()
     {
-        $email = $this->input->post('email');
+        $email = $this->input->post('email'); //ini nantinya diganti menjadi username
         $password = $this->input->post('password');
 
         $user = $this->db->get_where('user', ['email' => $email])->row_array();
@@ -44,9 +44,15 @@ class Auth extends CI_Controller
                         'email' => $user['email'],
                         'role_id' => $user['role_id']
                     ];
+
+                    //user role
                     $this->session->set_userdata($data);
                     if ($user['role_id'] == 1) {
                         redirect('admin');
+                    } elseif ($user['role_id'] == 2) {
+                        redirect('p2k3l');
+                    } elseif ($user['role_id'] == 3) {
+                        redirect('gm');
                     } else {
                         redirect('user');
                     }
