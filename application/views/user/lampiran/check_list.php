@@ -25,7 +25,7 @@
             </a>
             <hr class="sidebar-divider my-0">
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="<?= base_url('user'); ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -116,130 +116,613 @@
                             <div class="card-header py-3">
                                 <div class="container">
                                     <center>
-                                        <h4 class="m-0 font-weight-bold text-primary">PERNYATAAN</h4>
-
-                                        <h6 class="m-0 font-weight- text-primary">Sosialisasi Kebijakan LK3 & Peraturan Bagi Kontraktor/Suplier</h6>
-                                        <h6 class="m-0 font-weight- text-primary">Selama Berada di Area PT. AISIN INDONESIA</h6>
+                                        <h4 class="m-0 font-weight-bold text-primary">IDENTIFIIKASI ASPEK DAN DAMPAK LK3</h4>
+                                        <h4 class="m-0 font-weight-bold text-primary">UNTUK PEKERJAAN KONTRAKTOR</h4>
                                     </center>
                                 </div>
                             </div>
                             <div class="card-body">
-                                <table>
-                                    <tr>
-                                        <td>1. </td>
-                                        <td>Masuk Lingkungan PT.AISIN INDONESIA, Tamu harus melalui Pos security dan Wajib menyerahkan Identitas KTP,SIM,Kartu identitas karyawan dan Jumlah pekerja yang bertugas di PT.AISIN INDONESIA kepada Kepala regu /Chicf Security
-                                        </td>
-                                        <td>
-                                            <div class="radio">
-                                                <label><input type="radio" id='regular' name="optradio"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="radio">
-                                                <label><input type="radio" id='regular' name="optradio"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="radio">
-                                                <label><input type="radio" id='regular' name="optradio"></label>
-                                            </div>
-                                        </td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>2. </td>
-                                        <td>
-                                            Setiap masuk / keluar Tamu harus melalui pos security melapor membawa barang dan membaca kartu protokol keselamatan tamu yang berisi Kebijakan LK3 PT. AISIN INDONESIA & Panduan Tamu apabila terjadi keadaan darurat yang telah disediakan di pos security.
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>3. </td>
-                                        <td>
-                                            Bila masuk ke Pabrik wajib memperlihatkan form Visitor Plant kepada Security dipintu masuk, Form Visitor yang di setujui ditanda tangani Oleh Group Manager atau DIREKTUR PT.AISIN INDONESIA
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>4. </td>
-                                        <td>
-                                            Wajib menggunakan APD yang sesuai dan menaati tat tertib perusahaan
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>5. </td>
-                                        <td>
-                                            Setiap pulang /keluar dari komplek PT. Aisin Indonesia tunjukkan barang yg di bawa sertakan dokumennya dan menukar kartu Visitor dengan mengambil identitasnya masing-masing.
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>6. </td>
-                                        <td>
-                                            Khusus Kontraktor wajib memperlihatkan kepada Security Foto Copy izin Pekerjaan Khusus ( IPK ) yang sudah di Registrasi oleh P2K3L ( Section Safety ) dan dilampirkan Bukti Sosialisasi safety sebagai Syarat sudah mendapatkan pengarahan tentang safety untuk melakukan pekerjaan di PT.AISIN INDONESIA
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>7. </td>
-                                        <td>
-                                            Selama pekerjaan berlangsung karyawan kontraktor harus menggunakan seragam dan rompi Lengkap dengan Alat Pelindung Diri ( APD ) harus disediakan dan ada nama IDENTITAS Kontraktor '
-                                            Apabila kontraktor menggunakan helm dan Rompi harus type beda dengan yang digunakan oleh karyawan PT. Aisin Indonesia.'
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>6. </td>
-                                        <td>
-                                            Wajib menjaga ketertiban & keamanan di dalam lingkungan PT. Aisin Indonesia agar membatasi area kerja serta dipasang Police line / barekade safety line
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <center>NO</center>
+                                                </th>
+                                                <th>
+                                                    <center>ITEM</center>
+                                                </th>
+                                                <th>
+                                                    <center>ACTION</center>
+                                                </th>
+                                                <th>
+                                                    <center>KETERANGAN</center>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-center">1</td>
+                                                <td class="text-bold"> Rencana Kerja</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">1.1</td>
+                                                <td> Apakah kontraktor sudah memahami mekanisme kerja kontraktor?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">1.2</td>
+                                                <td> Sudah diperiksakah kondisi layak dan tidaknya peralatan kerja kontraktor?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">1.3</td>
+                                                <td> Sudah dilakukan identifikasi bahaya terhadap pekerjaan yang akan dilakukan?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">1.4</td>
+                                                <td> Kontraktor mempunyai prosedur standar terhadap pekerjaan yg beresiko tinggi terhadap lingkungan dan keselamatan?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">1.5</td>
+                                                <td> Apakah tersedia peralatan material handling dan prosedur yang mengaturnya</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">1.6</td>
+                                                <td> Apakah tersedia schedule detail pekerjaan ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">1.7</td>
+                                                <td> Penanggungjawab LK3 kontraktor :</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"></td>
+                                                <td> a. Adakah PIC / petugas tersebut ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"></td>
+                                                <td> b. Apakah PIC tersebut punya kewenangan untuk menegur / menghentikan pekerjaan ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">1.8</td>
+                                                <td> Kegiatan rutin LK3 :</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"></td>
+                                                <td> a. Penjelasan LK3 kepada pekerja / karyawan baru ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"></td>
+                                                <td> b. Komunikasi rutin LK3 ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"></td>
+                                                <td> c. Kampanye / promosi tentang LK3 ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"></td>
+                                                <td> d. Meeting rutin LK3 ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
 
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>7. </td>
-                                        <td>
-                                            Wajib untuk segera memberitahukan kepada User apabila terjadi keadaan darurat (Kebakaran, Ledakan, kebocoran Bahan Kimia, Banjir, Huru hara, dll) dan mematuhi petunjuk-petunjuk evakuasi dan petugas keadaan darurat PT Aisin Indonesia demi keselamatan karyawan
+                                            <tr>
+                                                <td class="text-center"></td>
+                                                <td> e. Inspeksi rutin LK3 ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
 
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>8. </td>
-                                        <td>
-                                            Selama bekerja diwajibkan Kepala proyek / pimpinan lapangan yang di tunjuk Selalu ada di Lokasi untuk mengawasi kondisi Area bila suatu waktu dibutuhkan Oleh user , sebelum meninggalkan area kerja harus melakukan menjaga kebersihan membuang sampah pada tempatnya
+                                            <tr>
+                                                <td class="text-center"></td>
+                                                <td> f. Laporan dan investigasi kejadian kecelakaan kerja / pencemaran lingkungan?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
 
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>9. </td>
-                                        <td>
-                                            Apabila dalam melaksanakan pekerjaannya ditemukan pelanggaran terhadap aturan safety (Standard kerja, APD, dll ) dilakukan Stop-Call-Wait dan Bila tidak diLengkapi,pekerjaan tidak dapat di lanjutkan
+                                            <tr>
+                                                <td class="text-center"></td>
+                                                <td> g. Pelatihan pemadaman api ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
 
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>10. </td>
-                                        <td>
-                                            Dilarang Keras Merokok dan Membuang Sampah ( Barang Bekas ) Bentuk apapun disembarang tempat Tanpa sepengetahuan USER bila terjadi Pelanggaran maka akan di kenakan Sangsi sesuai Peraturan Perusahaan PT.AISIN INDONESIA
-                                        </td>
-                                    </tr>
+                                            <tr>
+                                                <td class="text-center">1.9</td>
+                                                <td> Adakah program pencegahan / pengurangan kecelakaan, penyakit akibat kerja atau pencemaran lingkungan ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
 
-                                    <tr>
-                                        <td>
-
-                                        </td>
-                                        <td>
-                                            <p>
-                                                <br />Dengan ini saya membaca Kebijakan LK3 dan menyatakan telah menerima dan memahami seluruh isi dari peraturan pekerjaan kontraktor di PT.Aisin Indonesia
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </table>
+                                            <tr>
+                                                <td class="text-center">1.10</td>
+                                                <td> Tindakan / sanksi atas kejadian penyimpangan LK3 ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">2</td>
+                                                <td> Potensi Bahaya</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">2.1</td>
+                                                <td> Mempunyai aturan untuk melakukan identifikasi bahaya ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">2.2</td>
+                                                <td> Mempunyai sistim pengontrolan untuk item-item berikut :</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"></td>
+                                                <td> a. Tata rumah tangga / house keeping ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"></td>
+                                                <td> b. Pengamanan terhadap mesin / alat ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"></td>
+                                                <td> c. Bahan kimia berbahaya ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"></td>
+                                                <td> d. Bahan-bahan mudah terbakar ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"></td>
+                                                <td> e. Pemeliharaan peralatan ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"></td>
+                                                <td> f. Penggunaan APD ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">3</td>
+                                                <td> Pengarahan Safety pra-kerja</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">3.1</td>
+                                                <td> Sudah ada rencana Induksi / Pengarahan Safety sebelum bekerja ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">3.2</td>
+                                                <td> Siapa yang terlibat dalam pertemuan tersebut ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">4</td>
+                                                <td> Pelatihan LK3</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">4.1</td>
+                                                <td> Apakah sudah dilakukan pelatihan / training kepada karyawan / pekerja yang ada terkait LK3 ? Jika ya,</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"></td>
+                                                <td> a. Sebutkan jenis / nama pelatihan yang dilakukan !</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"></td>
+                                                <td> b. Adakah file / dokumen sebagai buki pelatihan sudah dilakukan ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">5</td>
+                                                <td>Keadan Darurat</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">5.1</td>
+                                                <td> Adakah sistim penanganan keadaan darurat ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">5.2</td>
+                                                <td> Semua karyawan / pekerja paham mengenai pengertian keadaan darurat dan tindakan yang harus dilakukan ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">5.3</td>
+                                                <td> Tahukah karyawan / pekerja mengenai pelaporan keadaan darurat ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">5.4</td>
+                                                <td> Adakah karyawan / pekerja yang sudah diberi pelatihan P3K ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">5.5</td>
+                                                <td> Tersediakah perlengkapan P3K yang sesuai ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">5.6</td>
+                                                <td> Sudah adakah perjanjian dengan PT. Aisin Indonesia, ambulance, rumah sakit atau lainnya terkait penanganan P3K dan kelanjutannya ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">5.7</td>
+                                                <td> Adakah contact person / nomor telepon penting yang bisa dihubungi jika terjadi keadaan darurat ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">6</td>
+                                                <td> Komitmen Manajemen Kontraktor</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">6.1</td>
+                                                <td> Apakah kegiatan-kegiatan LK3 di lapangan dilaporkan kepada pimpinan di kantor pusat ?</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"></td>
+                                                <td> Jika ya, sebutkan bentuk pelaporan yang dimaksud !</td>
+                                                <td class="text-center">
+                                                    <select class="form-control mb-2" name="jenis" id="jenis">
+                                                        <option value="ya">Ya</option>
+                                                        <option value="tidak">Tidak</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                </td>
+                                                <td><textarea class="form-control" id="" rows="2"></textarea></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
-
                         <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                            <button onclick="history.back()" class="btn btn-secondary btn-icon-split">
+                            <button href="#" type="submit" onclick="history.back()" class="btn btn-secondary btn-icon-split mr-2">
                                 <span class="icon text-white-50">
                                     <i class="fas fa-arrow-right"></i>
                                 </span>
                                 <span class="text">Back</span>
                             </button>
-                            <button href="#" type="submit" class="btn btn-success btn-icon-split ml-2">
+                            <button href="#" type="submit" class="btn btn-success btn-icon-split">
                                 <span class="icon text-white-50">
                                     <i class="fas fa-check"></i>
                                 </span>

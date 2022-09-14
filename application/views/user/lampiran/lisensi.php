@@ -25,7 +25,7 @@
             </a>
             <hr class="sidebar-divider my-0">
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="<?= base_url('user'); ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -124,7 +124,7 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <table>
+                                <table class="table table-bordered">
                                     <tr>
                                         <td>1. </td>
                                         <td>Masuk Lingkungan PT.AISIN INDONESIA, Tamu harus melalui Pos security dan Wajib menyerahkan Identitas KTP,SIM,Kartu identitas karyawan dan Jumlah pekerja yang bertugas di PT.AISIN INDONESIA kepada Kepala regu /Chicf Security

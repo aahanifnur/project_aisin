@@ -25,7 +25,7 @@
       </a>
       <hr class="sidebar-divider my-0">
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="<?= base_url('user'); ?>">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -47,6 +47,20 @@
             <a class="collapse-item" href="dropdowns.html">General</a>
           </div>
         </div>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Addons
+      </div>
+
+      <li class="nav-item">
+        <a class="nav-link" href="<?= base_url('user/check_list'); ?>">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Akun Kontraktor</span></a>
       </li>
 
 
@@ -116,7 +130,7 @@
                 <a class="m-0 float-right btn btn-danger btn-sm" href="#">Export <i class="fas fa-chevron-right"></i></a>
               </div>
               <div class="table-responsive">
-                <table class="table align-items-center table-flush">
+                <table class="table table-bordered">
                   <thead class="thead-light">
                     <tr class="text-center">
                       <th rowspan="2">No</th>
@@ -149,16 +163,18 @@
                         <td><?php echo $no++; ?></td>
                         <td><?php echo $data['company']; ?></td>
                         <td><?php echo $data['no_registrasi']; ?></td>
-                        <td><?php echo $data['kode_pekerjaan, nama_pekerjaan']; ?></td>
+                        <td><?php echo $data['jenis_pekerjaan'];
+                            echo ' - ';
+                            echo $data['nama_pekerjaan']; ?></td>
                         <td><?php echo $data['lokasi_pekerjaan']; ?></td>
-                        <td><?php echo $data['']; ?></td>
-                        <td><?php echo $data['s_bekerja']; ?></td>
-                        <td><?php echo $data['e_bekarja']; ?></td>
+                        <td><?php echo $data['dept_pekerjaan']; ?></td>
+                        <td><?php echo $data['tanggal_bekerja']; ?></td>
+                        <td>ini blom jadi</td>
                         <td><?php echo $data['perpanjangan']; ?></td>
-                        <td><?php echo $data['pic']; ?></td>
-                        <td><?php echo $data['dept']; ?></td>
+                        <td><?php echo $data['pic_user']; ?></td>
+                        <td><?php echo $data['dept_user']; ?></td>
                         <td><span class="badge badge-warning">Pending</span></td>
-                        <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
+                        <td><a href="" class="btn btn-sm btn-primary">Detail</a></td>
                       </tr>
                     <?php endforeach ?>
                   </tbody>
@@ -201,6 +217,7 @@
                 <a class="dropdown-item" href="<?= base_url('user/jsa'); ?>">test jsa</a>
                 <a class="dropdown-item" href="<?= base_url('user/test_modal'); ?>">modal</a>
                 <a class="dropdown-item" href="<?= base_url('user/form_multistep'); ?>">test multistep</a>
+                <a class="dropdown-item" href="<?= base_url('user/check_list'); ?>">test check</a>
               </div>
             </div>
           </div>

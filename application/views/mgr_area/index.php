@@ -18,14 +18,14 @@
     <div id="wrapper">
         <!-- Sidebar -->
         <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= base_url('user/index'); ?>">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon">
                     <img width="100px" height="90px" src="<?= base_url('assets/'); ?>img/logo/aisin.png">
                 </div>
             </a>
             <hr class="sidebar-divider my-0">
             <li class="nav-item active">
-                <a class="nav-link" href="<?= base_url('user'); ?>">
+                <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -92,110 +92,102 @@
 
                 <!-- Container Fluid-->
                 <div class="container-fluid" id="container-wrapper">
-                    <div class="col-xl-12 col-lg-7 d-sm-flex align-items-center justify-content-between">
-                        <h1 class="h4 mb-0 text-gray-800"></h1>
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Izin Pekerjaan Khusus</h1>
                         <!-- <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="./">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
                         </ol> -->
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item">
-                                <div>
-                                    <?php
-                                    echo date('l, d-M-Y');
-                                    ?>
-                                </div>
-                            </li>
-                        </ol>
                     </div>
 
-                    <div class="row mb-1">
-                        <div class="col-xl-12 col-lg-7">
-                            <div class="card-header py-3">
-                                <div class="container">
-                                    <center>
-                                        <h4 class="m-0 font-weight-bold text-dark">IDENTIFIIKASI ASPEK DAN DAMPAK LK3</h4>
-                                        <h4 class="m-0 font-weight-bold text-dark">UNTUK PEKERJAAN KONTRAKTOR</h4>
-                                    </center>
-                                </div>
-                            </div>
-                            <div class="card mb-4">
-                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary"></h6>
-                                    <a class="m-0 float-right btn btn-danger btn-sm" href="<?= base_url('user/form_jsa'); ?>">Tambah Data <i class="fas fa-chevron-right"></i></a>
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table align-items-center table-flush" id="">
-                                        <thead class="thead-light">
-                                            <tr>
-                                                <th>
-                                                    <center>NO</center>
-                                                </th>
-                                                <th>
-                                                    <center>URUTAN PROSES / KEGIATAN</center>
-                                                </th>
-                                                <th>
-                                                    <center>POTENSI BAHAYA / DAMPAK YANG MUNGKIN TIMBUL</center>
-                                                </th>
-                                                <th>
-                                                    <center>K3 / L</center>
-                                                </th>
-                                                <th>
-                                                    <center>TINDAKAN PENCEGAHAN YG HARUS DILAKUKAN</center>
-                                                </th>
-                                                <th>
-                                                    <center>KETERANGAN</center>
-                                                </th>
-                                                <th>
-                                                    <center>ACTION</center>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <?php
-                                            $no = 1;
-                                            // printf($result);
-                                            foreach ($result as $jsa) : ?>
-                                                <tr>
-                                                    <td class="text-center"><?php echo $no++; ?></td>
-                                                    <td><?php echo $jsa['urutan_proses'] ?></td>
-                                                    <td><?php echo $jsa['potensi_bahaya'] ?></td>
-                                                    <td class="text-center"><?php echo $jsa['k3l'] ?></td>
-                                                    <td><?php echo $jsa['tindakan_pencegahan'] ?></td>
-                                                    <td><?php echo $jsa['keterangan'] ?></td>
-                                                    <td width="140">
-                                                        <a href="<?= base_url('user/form_jsa_edit/'); ?><?= $jsa['id'] ?>" class="m-0 float-right btn btn-primary btn-sm mr-2"><i class="fas fa-edit"></i></a>
-
-                                                        <a href="<?= base_url('user/form_jsa_hapus/'); ?><?= $jsa['id'] ?>" class="m-0 float-right btn btn-danger btn-sm mr-2"><i class="fas fa-trash"></i></a>
-
-                                                    </td>
-                                                </tr>
-                                            <?php endforeach;
-                                            ?>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="card-footer"></div>
-                            </div>
-                            <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                                <button onclick="history.back()" class="btn btn-secondary btn-icon-split">
-                                    <span class="icon text-white-50">
-                                        <i class="fas fa-arrow-right"></i>
-                                    </span>
-                                    <span class="text">Back</span>
-                                </button>
-                                <button href="#" type="submit" class="btn btn-success btn-icon-split ml-2">
-                                    <span class="icon text-white-50">
-                                        <i class="fas fa-check"></i>
-                                    </span>
-                                    <span class="text">Approve</span>
-                                </button>
-
+                    <!-- DataTales Example -->
+                    <!-- <div class="container">
+                        <div class="">
+                            <div class="container">
+                                <center>
+                                    <h4 class="m-0 font-weight-bold text-primary">IZIN PEKERJAAN KHUSUS</h4>
+                                </center>
                             </div>
                         </div>
+                    </div> -->
+
+                    <div class="">
+                        <div class="card">
+                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold text-primary">Data Table</h6>
+                                <a class="m-0 float-right btn btn-danger btn-sm" href="#">Export <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table align-items-center table-flush">
+                                    <thead class="thead-light">
+                                        <tr class="text-center">
+                                            <th rowspan="2">No</th>
+                                            <th rowspan="2">Company</th>
+                                            <th rowspan="2">No Registrasi</th>
+                                            <th rowspan="2">Pekerjaan (Kode Pekerjaan - Pekerjaan) HPW-HW-CS-G</th>
+                                            <th colspan="2">Area Pekerjaan</th>
+                                            <th colspan="3">Tanggal Pekerjaan</th>
+                                            <th colspan="2">User</th>
+                                            <th colspan="2">Status</th>
+                                        </tr>
+                                        <tr class="text-center">
+                                            <th>Lokasi</th>
+                                            <th>Dept.</th>
+                                            <th>Mulai</th>
+                                            <th>Selesai</th>
+                                            <th>Perpanjangan</th>
+                                            <th>PIC</th>
+                                            <th>Dept.</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <?php $no = 1;
+                                        foreach ($result as $data) :
+                                        ?>
+                                            <tr>
+                                                <td><?php echo $no++; ?></td>
+                                                <td><?php echo $data['company']; ?></td>
+                                                <td><?php echo $data['no_registrasi']; ?></td>
+                                                <td><?php echo $data['kode_pekerjaan, nama_pekerjaan']; ?></td>
+                                                <td><?php echo $data['lokasi_pekerjaan']; ?></td>
+                                                <td><?php echo $data['']; ?></td>
+                                                <td><?php echo $data['s_bekerja']; ?></td>
+                                                <td><?php echo $data['e_bekarja']; ?></td>
+                                                <td><?php echo $data['perpanjangan']; ?></td>
+                                                <td><?php echo $data['pic']; ?></td>
+                                                <td><?php echo $data['dept']; ?></td>
+                                                <td><span class="badge badge-warning">Pending</span></td>
+                                                <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
+                                            </tr>
+                                        <?php endforeach ?>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <br />
+
+                    </div>
+
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+
+                        <table>
+                            <tr>
+                                <td>CP :</td>
+                                <td>- PIC IPK ( Angga - 081331184147 )</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>- PIC IPK ( Na'im - 081210104342 )</td>
+                            </tr>
+                        </table>
+                        <br /><br />
 
 
                     </div>
+
                     <!--Row-->
 
                     <!-- Modal Logout -->
