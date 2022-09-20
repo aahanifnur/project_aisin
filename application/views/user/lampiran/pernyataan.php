@@ -223,7 +223,7 @@
                                 </span>
                                 <span class="text">Back</span>
                             </button>
-                            <button href="#" type="submit" class="btn btn-success btn-icon-split ml-2">
+                            <button href="<?php echo site_url(''); ?>" class="btn btn-success btn-icon-split ml-2">
                                 <span class="icon text-white-50">
                                     <i class="fas fa-check"></i>
                                 </span>

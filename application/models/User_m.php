@@ -52,19 +52,53 @@ class User_m extends CI_Model
         $this->db->delete('identifikasi_aspek', ['id' => $id]);
     }
 
-    public function index_ipk()
+    public function tampil_pekerja($id)
     {
-        return $this->db->get('nama_pekerja, apd, pemantauan, peralatan, sumber_daya, pengawasan')->result_array();
-
-
-        // return $this->db->get('apd')->result_array();
-        // return $this->db->get('pemantauan')->result_array();
+        return $this->db->get_where('nama_pekerja', ['adm_id' =>
+        $id])->result_array();
     }
 
-    public function administrasi()
+    public function tampil_apd($id)
     {
-        return $this->db->get('administrasi')->result_array();
+        return $this->db->get_where('apd', ['adm_id' =>
+        $id])->result_array();
     }
+
+    public function tampil_pemantauan($id)
+    {
+        return $this->db->get_where('pemantauan', ['adm_id' =>
+        $id])->result_array();
+    }
+
+    public function tampil_alat($id)
+    {
+        return $this->db->get_where('peralatan', ['adm_id' =>
+        $id])->result_array();
+    }
+
+    public function tampil_sda($id)
+    {
+        return $this->db->get_where('sumber_daya', ['adm_id' =>
+        $id])->result_array();
+    }
+
+    public function tampil_pengawasan($id)
+    {
+        return $this->db->get_where('pengawasan', ['adm_id' =>
+        $id])->result_array();
+    }
+
+    public function administrasi($id)
+    {
+        return $this->db->get_where('administrasi', ['user_id' =>
+        $id])->result_array();
+    }
+
+    // public function lampiran($id)
+    // {
+    //     return $this->db->get_where('lampiran', ['adm_id' =>
+    //     $id])->result_array();
+    // }
 
     public function dashboard()
     {

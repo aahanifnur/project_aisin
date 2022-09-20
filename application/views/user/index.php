@@ -62,7 +62,14 @@
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Akun Kontraktor</span></a>
       </li>
+      <hr class="sidebar-divider">
 
+      <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0);" data-toggle="modal" data-target="#logoutModal">
+          <i class="fas fa-sign-out-alt fa-fw"></i>
+          <span>Logout</span>
+        </a>
+      </li>
 
       <hr class="sidebar-divider">
       <div class="version" id="">Version 1.1 2022</div>
@@ -72,7 +79,7 @@
       <div id="content">
         <!-- TopBar -->
         <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top">
-          <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
+          <button id="sidebarToggleTop" class="btn rounded-circle mr-3">
             <i class="fa fa-bars"></i>
           </button>
           <ul class="navbar-nav ml-auto">
@@ -127,15 +134,15 @@
             <div class="card">
               <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                 <h6 class="m-0 font-weight-bold text-primary">Data Table</h6>
-                <a class="m-0 float-right btn btn-danger btn-sm" href="#">Export <i class="fas fa-chevron-right"></i></a>
+                <a class="m-0 float-right btn btn-danger btn-sm" href="<?= base_url('ExportExcel/export'); ?>">Export <i class="fas fa-chevron-right"></i></a>
               </div>
               <div class="table-responsive">
                 <table class="table table-bordered">
                   <thead class="thead-light">
                     <tr class="text-center">
                       <th rowspan="2">No</th>
-                      <th rowspan="2">Company</th>
                       <th rowspan="2">No Registrasi</th>
+                      <th rowspan="2">Company</th>
                       <th rowspan="2">Pekerjaan (Kode Pekerjaan - Pekerjaan) HPW-HW-CS-G</th>
                       <th colspan="2">Area Pekerjaan</th>
                       <th colspan="3">Tanggal Pekerjaan</th>
@@ -161,8 +168,8 @@
                     ?>
                       <tr>
                         <td><?php echo $no++; ?></td>
-                        <td><?php echo $data['company']; ?></td>
                         <td><?php echo $data['no_registrasi']; ?></td>
+                        <td><?php echo $data['company']; ?></td> <!-- nama kontraktor -->
                         <td><?php echo $data['jenis_pekerjaan'];
                             echo ' - ';
                             echo $data['nama_pekerjaan']; ?></td>
@@ -174,9 +181,8 @@
                         <td><?php echo $data['pic_user']; ?></td>
                         <td><?php echo $data['dept_user']; ?></td>
                         <td><span class="badge badge-warning">Pending</span></td>
-                        <td><a href="" class="btn btn-sm btn-primary">Detail</a></td>
-                      </tr>
-                    <?php endforeach ?>
+                        <td><a href="<?= base_url('user/detail/'); ?><?= $data['id'] ?>" class="m-0 float-right btn btn-primary btn-sm mr-2">Detail</a>
+                        <?php endforeach ?>
                   </tbody>
                 </table>
               </div>

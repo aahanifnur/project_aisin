@@ -118,8 +118,11 @@
                                         <div class="col mr-2">
                                             <div class="text-center text-xs font-weight-bold text-uppercase mb-1">Kontraktor</div>
                                             <hr>
-
-                                            <div class="text-center h5 mb-0 font-weight-bold text-gray-800"><span class="badge badge-success">Approved</span></div>
+                                            <a class="dropdown-item" href="javascript:void(0);" data-toggle="modal" data-target="#logoutModal">
+                                                <div class="text-center h5 mb-0 font-weight-bold text-gray-800">
+                                                    <span class="badge badge-success">Approved</span>
+                                                </div>
+                                            </a>
                                             <hr>
                                             <div class="text-center mt-2 mb-0 text-muted text-xs">
                                                 <!-- <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span> -->
@@ -261,8 +264,6 @@
                             </div>
                         </div><!-- Earnings (Monthly) Card Example -->
 
-
-
                         <div class="col-xl-12 col-lg-7 mb-4 d-sm-flex align-items-center justify-content-between ml-3 mb-4">
                             <h4 class="h4 mb-0 text-gray-800">Perpanjangan</h4>
                             <!-- <ol class="breadcrumb">
@@ -306,7 +307,7 @@
                             <div class="card">
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h1 class="h4 mb-0 text-gray-800">Form IPK</h1>
-                                    <a class="m-0 float-left btn btn-danger btn-sm" href="<?= base_url('user/form_adm'); ?>">Isi Form <i class="fas fa-chevron-right"></i></a>
+                                    <a class="m-0 float-left btn btn-danger btn-sm" href="<?= base_url('user/form_wizard'); ?>">Isi Form <i class="fas fa-chevron-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -376,35 +377,186 @@
                         <!-- </div> -->
 
                         <!-- Invoice Example -->
-                        <div class="col-xl-12 col-lg-7 mb-4">
+                        <div class="col-xl-10 col-lg-7 mb-4">
+                        </div>
+                        <div class="col-xl-6 col-lg-7 mb-4">
                             <div class="card">
                                 <div class="card-header py-2.75 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary"></h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Nama Pekerja</h6>
                                 </div>
                                 <div class="table-responsive">
-                                    <table class="table align-items-center table-flush" id="">
+                                    <table class="table table-bordered" id="">
                                         <thead class="thead-light">
                                             <tr class="text-center">
-                                                <th rowspan="2">No</th>
-                                                <th rowspan="2">Nama Pekerja</th>
-                                                <th rowspan="2">Training HPW</th>
-                                                <th rowspan="2">ID Card</th>
-                                                <th colspan="2">APD yang Digunakan</th>
-                                                <th colspan="2">Pemantauan Alat Bantu Kerja</th>
-                                                <th colspan="2">Peralatan Kerja</th>
-                                                <th colspan="3">Sumber Daya yang Digunakan</th>
-                                                <th colspan="3">Pengawasan oleh PT AISIN INDONESIA</th>
+                                                <th>No</th>
+                                                <th>Nama Pekerja</th>
+                                                <th>Training HPW</th>
+                                                <th>ID Card</th>
                                             </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php
+                                            $no = 1;
+                                            // printf($result);
+                                            foreach ($result_pekerja as $np) : ?>
+                                                <tr>
+                                                    <td class="text-center"><?php echo $no++; ?>.</td>
+                                                    <td><?php echo $np['nama_pekerja'] ?></td>
+                                                    <td align="center"><?php echo $np['training'] ?></td>
+                                                    <td align="center"><?php echo $np['id_card'] ?></td>
+                                                </tr>
+                                            <?php endforeach;
+                                            ?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="card-footer"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-7 mb-4">
+                            <div class="card">
+                                <div class="card-header py-2.75 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">APD yang Digunakan</h6>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="">
+                                        <thead class="thead-light">
                                             <tr class="text-center">
+                                                <th>No</th>
                                                 <th>Nama</th>
                                                 <th>Jumlah</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php
+                                            $no = 1;
+                                            // printf($result);
+                                            foreach ($result_apd as $apd) : ?>
+                                                <tr>
+                                                    <td class="text-center"><?php echo $no++; ?>.</td>
+                                                    <!-- apd -->
+                                                    <td><?php echo $apd['nama_apd'] ?></td>
+                                                    <td><?php echo $apd['jumlah_apd'] ?></td>
+                                                </tr>
+                                            <?php endforeach;
+                                            ?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="card-footer"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-7 mb-4">
+                            <div class="card">
+                                <div class="card-header py-2.75 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Pemantauan Alat Bantu Kerja</h6>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="">
+                                        <thead class="thead-light">
+                                            <tr class="text-center">
+                                                <th>No</th>
                                                 <th>Nama</th>
                                                 <th>Kondisi</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php
+                                            $no = 1;
+                                            // printf($result);
+                                            foreach ($result_pemantauan as $pm) : ?>
+                                                <tr>
+                                                    <td class="text-center"><?php echo $no++; ?>.</td>
+                                                    <!-- pemantauan -->
+                                                    <td><?php echo $pm['nama_pemantauan'] ?></td>
+                                                    <td><?php echo $pm['kondisi_pemantauan'] ?></td>
+                                                </tr>
+                                            <?php endforeach;
+                                            ?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="card-footer"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-7 mb-4">
+                            <div class="card">
+                                <div class="card-header py-2.75 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Peralatan Kerja</h6>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="">
+                                        <thead class="thead-light">
+                                            <tr class="text-center">
+                                                <th>No</th>
                                                 <th>Nama</th>
                                                 <th>Jumlah</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php
+                                            $no = 1;
+                                            // printf($result);
+                                            foreach ($result_alat as $al) : ?>
+                                                <tr>
+                                                    <td class="text-center"><?php echo $no++; ?>.</td>
+                                                    <!-- peralatan -->
+                                                    <td><?php echo $al['nama_peralatan'] ?></td>
+                                                    <td><?php echo $al['jumlah_peralatan'] ?></td>
+                                                </tr>
+                                            <?php endforeach;
+                                            ?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="card-footer"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-7 mb-4">
+                            <div class="card">
+                                <div class="card-header py-2.75 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Sumber Daya yang Digunakan</h6>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="">
+                                        <thead class="thead-light">
+                                            <tr class="text-center">
+                                                <th>No</th>
                                                 <th>Listrik</th>
                                                 <th>Angin</th>
                                                 <th>Air</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php
+                                            $no = 1;
+                                            // printf($result);
+                                            foreach ($result_sda as $sda) : ?>
+                                                <tr>
+                                                    <td class="text-center"><?php echo $no++; ?>.</td>
+                                                    <!-- sumber daya -->
+                                                    <td><?php echo $sda['listrik'] ?></td>
+                                                    <td><?php echo $sda['angin'] ?></td>
+                                                    <td><?php echo $sda['air'] ?></td>
+                                                </tr>
+                                            <?php endforeach;
+                                            ?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="card-footer"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-7 mb-4">
+                            <div class="card">
+                                <div class="card-header py-2.75 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Pengawasan oleh PT AISIN Indonesia</h6>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="">
+                                        <thead class="thead-light">
+                                            <tr class="text-center">
+                                                <th>No</th>
                                                 <th>User</th>
                                                 <th>P2K3L</th>
                                                 <th>Safety</th>
@@ -414,29 +566,13 @@
                                             <?php
                                             $no = 1;
                                             // printf($result);
-                                            foreach ($result as $data) : ?>
+                                            foreach ($result_pengawasan as $pg) : ?>
                                                 <tr>
-                                                    <td class="text-center"><?php echo $no++; ?></td>
-                                                    <td><?php echo $data['nama_pekerja'] ?></td>
-                                                    <td><?php echo $data['training'] ?></td>
-                                                    <td><?php echo $data['id_card'] ?></td>
-                                                    <!-- apd -->
-                                                    <td><?php echo $data['nama_apd'] ?></td>
-                                                    <td><?php echo $data['jumlah_apd'] ?></td>
-                                                    <!-- pemantauan -->
-                                                    <td><?php echo $data['nama_pemantauan'] ?></td>
-                                                    <td><?php echo $data['kondisi_pemantauan'] ?></td>
-                                                    <!-- peralatan -->
-                                                    <td><?php echo $data['nama_peralatan'] ?></td>
-                                                    <td><?php echo $data['jumlah_peralatan'] ?></td>
-                                                    <!-- sumber daya -->
-                                                    <td><?php echo $data['listrik'] ?></td>
-                                                    <td><?php echo $data['angin'] ?></td>
-                                                    <td><?php echo $data['air'] ?></td>
+                                                    <td class="text-center"><?php echo $no++; ?>.</td>
                                                     <!-- pengawasan -->
-                                                    <td><?php echo $data['user'] ?></td>
-                                                    <td><?php echo $data['p2k3l'] ?></td>
-                                                    <td><?php echo $data['safety'] ?></td>
+                                                    <td><?php echo $pg['user'] ?></td>
+                                                    <td><?php echo $pg['p2k3l'] ?></td>
+                                                    <td><?php echo $pg['safety'] ?></td>
                                                 </tr>
                                             <?php endforeach;
                                             ?>
@@ -468,27 +604,35 @@
                                         <tbody>
                                             <tr>
                                                 <td><a>Pernyataaan Sosialisasi Kebijakan LK3 & Peraturan</a></td>
-                                                <td><span class="badge badge-success">Delivered</span></td>
+                                                <td align="center">
+                                                    <?php
+                                                    if ($status->status_lampiran == 1) { //status=
+                                                        echo '<span class="badge badge-success">Aprroved</span>';
+                                                    } else {
+                                                        echo '<span class="badge badge-warning">Pending</span>';
+                                                    }
+                                                    ?>
+                                                </td>
                                                 <td><a href="<?= base_url('user/pernyataan'); ?>" class="btn btn-sm btn-primary">Detail</a></td>
                                             </tr>
                                             <tr>
                                                 <td><a>Identifikasi Aspek dan Dampak LK3</a></td>
-                                                <td><span class="badge badge-warning">Shipping</span></td>
+                                                <td align="center"><span class="badge badge-warning">Shipping</span></td>
                                                 <td><a href="<?= base_url('user/jsa'); ?>" class="btn btn-sm btn-primary">Detail</a></td>
                                             </tr>
                                             <tr>
                                                 <td><a>Check List Aktivitas Pra-kerja</a></td>
-                                                <td><span class="badge badge-danger">Pending</span></td>
+                                                <td align="center"><span class="badge badge-danger">Pending</span></td>
                                                 <td><a href="<?= base_url('user/check_list'); ?>" class="btn btn-sm btn-primary">Detail</a></td>
                                             </tr>
                                             <tr>
                                                 <td><a>Lisensi K3 CS</a></td>
-                                                <td><span class="badge badge-info">Processing</span></td>
+                                                <td align="center"><span class="badge badge-info">Processing</span></td>
                                                 <td><a href="<?= base_url('user/upload_file'); ?>" class="btn btn-sm btn-primary">Detail</a></td>
                                             </tr>
                                             <tr>
                                                 <td><a>Catatan Pekerjaan Khusus</a></td>
-                                                <td><span class="badge badge-success">Delivered</span></td>
+                                                <td align="center"><span class="badge badge-success">Delivered</span></td>
                                                 <td><a href="<?= base_url('user/catatan_pekerjaan_khusus'); ?>" class="btn btn-sm btn-primary">Detail</a></td>
                                             </tr>
                                         </tbody>

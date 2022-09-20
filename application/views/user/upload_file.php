@@ -122,6 +122,21 @@
                                 </form>
                             </div>
                         </div>
+                        <div class="d-sm-flex align-items-center mb-4 mt-3">
+                            <button href="#" type="submit" onclick="history.back()" class="btn btn-secondary btn-icon-split mr-2">
+                                <span class="icon text-white-50">
+                                    <i class="fas fa-arrow-right"></i>
+                                </span>
+                                <span class="text">Back</span>
+                            </button>
+                            <button href="#" type="submit" class="btn btn-success btn-icon-split">
+                                <span class="icon text-white-50">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <span class="text">Approve</span>
+                            </button>
+
+                        </div>
                     </div>
 
                     <!-- Modal Logout -->

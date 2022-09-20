@@ -28,10 +28,24 @@ class User extends CI_Controller
 
     public function high_place_work()
     {
-        $data['result'] = $this->User_m->index_ipk();
-        $data['result1'] = $this->User_m->administrasi();
+        $id = $this->session->userdata('id');
+        $data_adm = $this->User_m->administrasi($id);
+
+        $data['result1'] = $data_adm;
+        $id_adm = $data_adm[0]['id'];
+
+
+        $data['result_pekerja'] = $this->User_m->tampil_pekerja($id_adm);
+        $data['result_apd'] = $this->User_m->tampil_apd($id_adm);
+        $data['result_pemantauan'] = $this->User_m->tampil_pemantauan($id_adm);
+        $data['result_alat'] = $this->User_m->tampil_alat($id_adm);
+        $data['result_sda'] = $this->User_m->tampil_sda($id_adm);
+        $data['result_pengawasan'] = $this->User_m->tampil_pengawasan($id_adm);
+
+
 
         $data['title'] = 'Home';
+
         $data['user'] = $this->db->get_where('user', ['email' =>
         $this->session->userdata('email')])->row_array();
         $this->load->view('templates/header', $data);
@@ -127,7 +141,7 @@ class User extends CI_Controller
         // $this->load->view('templates/footer');
     }
 
-    public function form_adm()
+    public function form_wizard()
     {
         $data['title'] = 'Home';
         $data['user'] = $this->db->get_where('user', ['email' =>
@@ -135,7 +149,7 @@ class User extends CI_Controller
         $this->load->view('templates/header', $data);
         // $this->load->view('templates/sidebar', $data);
         // $this->load->view('templates/topbar', $data);
-        $this->load->view('user/form_adm', $data);
+        $this->load->view('user/form_wizard_all', $data);
         // $this->load->view('templates/footer');
     }
 
@@ -276,5 +290,37 @@ class User extends CI_Controller
             echo "<pre>";
             print_r($_POST);
         }
+    }
+
+    public function detail($id)
+    {
+        $id = $this->session->userdata('id');
+        $data_adm = $this->User_m->administrasi($id);
+
+        $data['result1'] = $data_adm;
+        $id_adm = $data_adm[0]['id'];
+
+        $data['result_pekerja'] = $this->User_m->tampil_pekerja($id_adm);
+        $data['result_apd'] = $this->User_m->tampil_apd($id_adm);
+        $data['result_pemantauan'] = $this->User_m->tampil_pemantauan($id_adm);
+        $data['result_alat'] = $this->User_m->tampil_alat($id_adm);
+        $data['result_sda'] = $this->User_m->tampil_sda($id_adm);
+        $data['result_pengawasan'] = $this->User_m->tampil_pengawasan($id_adm);
+
+        $data['title'] = 'Home';
+
+        $data['user'] = $this->db->get_where('user', ['email' =>
+        $this->session->userdata('email')])->row_array();
+        $this->load->view('templates/header', $data);
+        $this->load->view('user/ipk/high_place_work', $data);
+
+
+
+        // $data['user'] = $this->db->get_where('user', ['email' =>
+        // $this->session->userdata('email')])->row_array();
+        // $this->load->view('templates/header', $data);
+
+        // $data['identifikasi_aspek'] = $this->User_m->getUserById($id);
+        // $this->load->view('user/ipk/high_place_work', $data);
     }
 }

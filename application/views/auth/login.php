@@ -46,7 +46,6 @@
                                         <h5>Selamat datang !</h5>
                                     </div>
                                     <p class="text-muted">Masukan username & password untuk masuk ke Sistem Informasi IPK</p>
-                                    <!-- file css e nengdi? iki nggo bootstrap? iyo mas, kok seh ajeg yo mas? -->
                                     <p style="background-color: #fff3cd !important;
   padding: 20px;
   border-color: #ffecb5;
