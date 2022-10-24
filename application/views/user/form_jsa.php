@@ -115,8 +115,13 @@
                                             <textarea id="urutanProses" name="urutanProses" class="form-control" rows="3"></textarea>
                                         </div>
                                         <div class="form-group">
-                                            <label>Potensi Bahaya / Dampak yang Memungkinkakn Timbul</label>
+                                            <label>Potensi Bahaya / Aspek Lingkungan</label>
                                             <textarea name="potensiBahaya" id="potensiBahaya" class="form-control" rows="3"></textarea>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Dampak yang Mungkin Timbul</label>
+                                            <textarea name="dampak" id="dampak" class="form-control" rows="3"></textarea>
 
                                         </div>
                                         <div class="form-group">

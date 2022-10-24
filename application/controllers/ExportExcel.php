@@ -97,7 +97,7 @@ class ExportExcel extends CI_Controller
             $excel->setActiveSheetIndex(0)->setCellValue('F' . $numrow, $data->perpanjangan);
             $excel->setActiveSheetIndex(0)->setCellValue('G' . $numrow, $data->perpanjangan);
             $excel->setActiveSheetIndex(0)->setCellValue('H' . $numrow, $data->company);
-            $excel->setActiveSheetIndex(0)->setCellValue('I' . $numrow, $data->user);
+            // $excel->setActiveSheetIndex(0)->setCellValue('I' . $numrow, $data->user);
             $excel->setActiveSheetIndex(0)->setCellValue('J' . $numrow, $data->dept_user);
 
             // Apply style row yang telah kita buat tadi ke masing-masing baris (isi tabel)
@@ -109,7 +109,7 @@ class ExportExcel extends CI_Controller
             $excel->getActiveSheet()->getStyle('F' . $numrow)->applyFromArray($style_row);
             $excel->getActiveSheet()->getStyle('G' . $numrow)->applyFromArray($style_row);
             $excel->getActiveSheet()->getStyle('H' . $numrow)->applyFromArray($style_row);
-            $excel->getActiveSheet()->getStyle('I' . $numrow)->applyFromArray($style_row);
+            // $excel->getActiveSheet()->getStyle('I' . $numrow)->applyFromArray($style_row);
             $excel->getActiveSheet()->getStyle('J' . $numrow)->applyFromArray($style_row);
 
             $no++; // Tambah 1 setiap kali looping

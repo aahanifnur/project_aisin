@@ -103,143 +103,94 @@
 
                     <div class="row">
                         <div class="col-lg-6">
-                            <!-- Administrasi -->
-                            <div class="card mb-3">
-                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Administration</h6>
+                            <form action="<?= base_url('User/simpanDataIPK'); ?>" method="POST">
+                                <!-- Nama Pekerja -->
+                                <div class="card mb-3">
+                                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                        <h6 class="m-0 font-weight-bold text-primary">Nama Pekerja</h6>
+                                    </div>
+                                    <div id="show_item_3">
+                                        <div class="card-body">
+                                            <div class="form-group">
+                                                <label>Nama Pekerja</label>
+                                                <input type="" class="form-control mb-2" id="pekerja" name="pekerja">
+                                                <label>ID Card</label>
+                                                <select class="form-control mb-2" id="exampleFormControlSelect1" aria-placeholder="jumlah">
+                                                    <option>Ada</option>
+                                                    <option>Tidak</option>
+                                                </select>
+                                                <label>Training HPW</label>
+                                                <select class="form-control mb-2" id="exampleFormControlSelect1" aria-placeholder="jumlah">
+                                                    <option>Ada</option>
+                                                    <option>Tidak</option>
+                                                </select>
+                                            </div>
+                                            <button type="button" name="add" id="add" class="btn btn-success add_item_btn_pekerja">
+                                                Add More
+                                            </button>
+                                            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="card-body">
-                                    <form>
-                                        <div class="form-group">
-                                            <label>No Registrasi</label>
-                                            <input type="email" class="form-control" id="noreg" aria-describedby="emailHelp" disabled>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Nama Kontraktor</label>
-                                            <input type="email" class="form-control" id="noreg" aria-describedby="emailHelp">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Nama Pekerjaan</label>
-                                            <select class="form-control mb-2">
-                                                <option>Default select</option>
-                                                <option>Default select</option>
-                                                <option>Default select</option>
-                                            </select>
-                                            <input type="email" class="form-control mb-3" id="noreg" aria-describedby="emailHelp">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Lokasi Pekerjaan</label>
-                                            <select class="form-control mb-2">
-                                                <option>Default select</option>
-                                                <option>Default select</option>
-                                                <option>Default select</option>
-                                            </select>
-                                            <input type="email" class="form-control mb-3" id="noreg" aria-describedby="emailHelp">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputPassword1">Tangga Bekerja</label>
-                                            <input type="date" class="form-control mb-2" id="exampleInputPassword1" placeholder="Password">
-                                            <label for="">sampai dengan </label>
-                                            <input type="date" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputPassword1">Perpanjangan</label>
-                                            <input type="date" class="form-control mb-2" id="exampleInputPassword1" placeholder="Password">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>CP Mandor</label>
-                                            <input type="email" class="form-control mb-3" id="noreg" aria-describedby="emailHelp">
-                                        </div>
-                                        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-                                    </form>
-                                </div>
-                            </div>
 
-                            <!-- Nama Pekerja -->
-                            <div class="card mb-3">
-                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Nama Pekerja</h6>
-                                </div>
-                                <div class="card-body">
-                                    <form>
-                                        <div class="form-group">
-                                            <label>Nama Pekerja</label>
-                                            <input type="email" class="form-control mb-2" id="noreg" aria-describedby="emailHelp">
-                                            <label>ID Card</label>
-                                            <select class="form-control mb-2" id="exampleFormControlSelect1" aria-placeholder="jumlah">
-                                                <option>Ada</option>
-                                                <option>Tidak</option>
-                                            </select>
-                                            <label>Training HPW</label>
-                                            <select class="form-control mb-2" id="exampleFormControlSelect1" aria-placeholder="jumlah">
-                                                <option>Ada</option>
-                                                <option>Tidak</option>
-                                            </select>
-                                        </div>
-                                        <button type="button" name="add" id="add" class="btn btn-success add-more">
-                                            Add More
-                                        </button>
-                                        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-                                    </form>
-                                </div>
-                            </div>
+                                <!-- alat keselamatan -->
+                                <div class="card mb-3">
+                                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                        <h6 class="m-0 font-weight-bold text-primary">Alat Keselamatan Kerja</h6>
+                                    </div>
+                                    <div id="show_item_4">
+                                        <div class="card-body">
 
-                            <!-- alat keselamatan -->
-                            <div class="card mb-3">
-                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Alat Keselamatan Kerja</h6>
-                                </div>
-                                <div class="card-body">
-                                    <form>
-                                        <div class="form-group">
-                                            <label>Nama AKK / APD</label>
-                                            <input type="email" class="form-control mb-2" id="noreg" aria-describedby="emailHelp">
-                                            <input type="number" class="form-control mb-2" id="noreg" aria-describedby="emailHelp">
+                                            <div class="form-group">
+                                                <label>Nama AKK / APD</label>
+                                                <input type="email" class="form-control mb-2" id="noreg" aria-describedby="emailHelp">
+                                                <input type="number" class="form-control mb-2" id="noreg" aria-describedby="emailHelp">
+
+                                            </div>
+
+                                            <button type="button" name="add" id="add" class="btn btn-success add_item_btn_apd">
+                                                Add More
+                                            </button>
 
                                         </div>
-
-                                        <button type="button" name="add" id="add" class="btn btn-success add-more">
-                                            Add More
-                                        </button>
-
-                                        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-                                    </form>
+                                    </div>
                                 </div>
-                            </div>
+                                <div class="card mb-3">
+                                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                        <h6 class="m-0 font-weight-bold text-primary">Pemantauan Alat kerja</h6>
+                                    </div>
+                                    <div id="show_item_5">
+                                        <div class="card-body">
+
+                                            <div class="form-group">
+                                                <label>Nama AKK / APD</label>
+                                                <input type="email" class="form-control mb-2" id="noreg" aria-describedby="emailHelp">
+                                                <select class="form-control" id="exampleFormControlSelect1" aria-placeholder="jumlah">
+                                                    <option>OK</option>
+                                                    <option>NG</option>
+                                                </select>
+                                            </div>
+
+                                            <button type="button" name="add" id="add" class="btn btn-success add_item_btn_pemantauan">
+                                                Add More
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
 
                         </div>
 
                         <div class="col-lg-6">
                             <!-- General Element -->
-                            <div class="card mb-3">
-                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Pemantauan Alat kerja</h6>
-                                </div>
-                                <div class="card-body">
-                                    <form>
-                                        <div class="form-group">
-                                            <label>Nama AKK / APD</label>
-                                            <input type="email" class="form-control mb-2" id="noreg" aria-describedby="emailHelp">
-                                            <select class="form-control" id="exampleFormControlSelect1" aria-placeholder="jumlah">
-                                                <option>OK</option>
-                                                <option>NG</option>
-                                            </select>
-                                        </div>
 
-                                        <button type="button" name="add" id="add" class="btn btn-success add-more">
-                                            Add More
-                                        </button>
-
-                                        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-                                    </form>
-                                </div>
-                            </div>
                             <div class="card mb-3">
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 class="m-0 font-weight-bold text-primary">Alat yang Digunakan</h6>
                                 </div>
-                                <div class="card-body">
-                                    <form>
+                                <div id="show_item_6">
+                                    <div class="card-body">
+
                                         <div class="form-group">
                                             <label>Nama AKK / APD</label>
                                             <input type="email" class="form-control mb-2" id="noreg" aria-describedby="emailHelp">
@@ -249,12 +200,13 @@
                                             </select>
                                         </div>
 
-                                        <button type="button" name="add" id="add" class="btn btn-success add-more">
+                                        <button type="button" name="add" id="add" class="btn btn-success add_item_btn_alat">
                                             Add More
                                         </button>
 
                                         <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-                                    </form>
+
+                                    </div>
                                 </div>
                             </div>
 
@@ -265,22 +217,22 @@
                                 </div>
                                 <div id="show_item">
                                     <div class="card-body">
-                                        <form>
-                                            <div class="form-group">
-                                                <label>Nama AKK / APD</label>
-                                                <input name="nama" type="text" class="form-control mb-2" id="nama" aria-describedby="">
-                                                <select class="form-control" id="akk_apd_s" aria-placeholder="kondis">
-                                                    <option>OK</option>
-                                                    <option>NG</option>
-                                                </select>
-                                            </div>
 
-                                            <button type="button" name="add" id="add" class="btn btn-success add_item_btn">
-                                                Add More
-                                            </button>
+                                        <div class="form-group">
+                                            <label>Nama AKK / APD</label>
+                                            <input name="nama" type="text" class="form-control mb-2" id="nama" aria-describedby="">
+                                            <select class="form-control" id="akk_apd_s" aria-placeholder="kondis">
+                                                <option>OK</option>
+                                                <option>NG</option>
+                                            </select>
+                                        </div>
 
-                                            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-                                        </form>
+                                        <button type="button" name="" id="" class="btn btn-success add_item_btn_sda">
+                                            Add More
+                                        </button>
+
+                                        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+
                                     </div>
                                 </div>
                             </div>
@@ -288,8 +240,9 @@
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 class="m-0 font-weight-bold text-primary">Pengawasan Oleh PT AISIN Indonesia</h6>
                                 </div>
-                                <div class="card-body">
-                                    <form>
+                                <div id="show_item_2">
+                                    <div class="card-body">
+
                                         <div class="form-group">
                                             <label>User</label>
                                             <input type="email" class="form-control mb-2" id="noreg" aria-describedby="emailHelp">
@@ -303,18 +256,18 @@
                                             <input type="email" class="form-control mb-2" id="noreg" aria-describedby="emailHelp">
                                         </div>
 
-                                        <!-- <button type="button" name="add" id="add" class="btn btn-success add-more">
+                                        <button type="button" name="add" id="add" class="btn btn-success add_item_btn_pengawas">
                                             Add More
-                                        </button> -->
+                                        </button>
 
-                                        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-                                    </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 mb-3">
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
+                        </form>
                     </div>
                     <!--Row-->
 
@@ -372,52 +325,60 @@
     <script src="<?= base_url('assets/'); ?>vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="<?= base_url('assets/'); ?>js/ruang-admin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="<?= base_url('assets/'); ?>js/multiple_input_sda.js"></script>
+    <script src="<?= base_url('assets/'); ?>js/multiple_input_pengawasan.js"></script>
+    <script src="<?= base_url('assets/'); ?>js/multiple_input_pekerja.js"></script>
+    <script src="<?= base_url('assets/'); ?>js/multiple_input_apd.js"></script>
+    <script src="<?= base_url('assets/'); ?>js/multiple_input_alat.js"></script>
+    <script src="<?= base_url('assets/'); ?>js/multiple_input_pemantauan.js"></script>
 
     <script>
-        $(document).ready(function() {
-            $(".add_item_btn").click(function(e) {
-                e.preventDefault();
-                $("#show_item").prepend(`
-            <div class="card-body">
-                                    <form>
-                                        <div class="form-group">
-                                            <label>Nama AKK / APD</label>
-                                            <input name="nama" type="text" class="form-control mb-2" id="nama" aria-describedby="">
-                                            <select class="form-control" id="akk_apd_s" aria-placeholder="">
-                                                <option>OK</option>
-                                                <option>NG</option>
-                                            </select>
-                                        </div>
+        // $(document).ready(function() {
+        //     $(".add_item_btn").click(function(e) {
+        //         e.preventDefault();
+        //         $("#show_item").prepend(`
+        //     <div class="card-body">
+        //                             <form>
+        //                                 <div class="form-group">
+        //                                     <label>Nama AKK / APD</label>
+        //                                     <input name="nama" type="text" class="form-control mb-2" id="nama" aria-describedby="">
+        //                                     <select class="form-control" id="akk_apd_s" aria-placeholder="">
+        //                                         <option>OK</option>
+        //                                         <option>NG</option>
+        //                                     </select>
+        //                                 </div>
 
-                                        <button type="button" name="remove" id="remove" class="btn btn-danger remove_item_btn">
-                                            Remove
-                                        </button>                                   
-                                    </form>
-                                </div>
-                                `)
-            });
-            $(document).on('click', '.remove_item_btn', function(e) {
-                e.preventDefault();
-                let row_item = $(this).parent().parent();
-                $(row_item).remove();
-            });
+        //                                 <button type="button" name="remove" id="remove" class="btn btn-danger remove_item_btn">
+        //                                     Remove
+        //                                 </button>                                   
+        //                             </form>
+        //                         </div>
+        //                         `)
+        //     });
+        //     $(document).on('click', '.remove_item_btn', function(e) {
+        //         e.preventDefault();
+        //         let row_item = $(this).parent().parent();
+        //         $(row_item).remove();
+        //     });
 
 
-            // pending................................................... iki nggo insert data ng db
-            // ajax request to insert all form data --- pending ndisik ya
-            // $("#add_form").submit(function(e) {
-            //     e.preventDefault();
-            //     $("#add_btn").val('Adding...');
-            //     $.ajax({
-            //         url: 'action.php',
-            //         method: 'post',
-            //         data: $(this).serialize(),
-            //         success: function(response) {
-            //             console.log(response);
-            //         }
-            //     })
-            // })
-        });
+        // pending................................................... iki nggo insert data ng db
+        // ajax request to insert all form data --- pending ndisik ya
+        // $("#add_form").submit(function(e) {
+        //     e.preventDefault();
+        //     $("#add_btn").val('Adding...');
+        //     $.ajax({
+        //         url: 'user/tambah_administrasi',
+        //         method: 'post',
+        //         data: $(this).serialize(),
+        //         success: function(response) {
+        //             console.log(response);
+        //         }
+        //     })
+        // })
+        //end pending
+
+        // });
     </script>
     <!-- end import javascript -->
 
